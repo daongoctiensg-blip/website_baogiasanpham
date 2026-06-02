@@ -112,7 +112,7 @@ body { font-family:"Montserrat",sans-serif; background:#f5f0eb; color:#2a2018; }
 .hp-img-wrap { width:90px; flex-shrink:0; background:#fff; border-radius:8px; display:flex; align-items:center; justify-content:center; padding:8px; border:1px solid #ede5d8; }
 .hp-img-wrap img { width:100%; height:90px; object-fit:contain; }
 .hp-img-placeholder { font-size:32px; }
-.hp-details { flex:1; display:flex; flex-direction:column; justify-content:space-between; }
+.hp-details { flex:1; display:flex; flex-direction:column; justify-content:space-between; padding-left:4px; }
 .hp-category { font-size:9px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#9a7a50; margin-bottom:4px; }
 .hp-name { font-size:14px; font-weight:600; color:#1c1612; line-height:1.4; margin-bottom:6px; }
 .hp-volume { font-size:11px; color:#b0a080; margin-bottom:8px; }
@@ -569,8 +569,8 @@ function ORDER_addProductRow(name='', qty=1) {
   tr.innerHTML = `
     <td><select onchange="ORDER_updateRow('${id}')">${getProductOptions(name)}</select></td>
     <td style="text-align:center"><input type="number" min="1" value="${qty}" onchange="ORDER_updateRow('${id}')" oninput="ORDER_updateRow('${id}')"></td>
-    <td class="price-cell" id="price_${id}">${price ? fmt(price) : '—'}</td>
-    <td class="price-cell" id="total_${id}">${total ? fmt(total) : '—'}</td>
+    <td class="price-cell right" id="price_${id}">${price ? fmt(price) : '—'}</td>
+    <td class="price-cell right" id="total_${id}">${total ? fmt(total) : '—'}</td>
     <td><button class="remove-btn" onclick="ORDER_removeRow('${id}')">×</button></td>`;
   document.getElementById('productRows').appendChild(tr);
   ORDER_updateTotal();
@@ -1161,10 +1161,10 @@ function doChangePw() {
       <table class="order-product-table">
         <thead>
           <tr>
-            <th style="width:42%">Sản phẩm</th>
-            <th style="width:16%;text-align:center">Số lượng</th>
-            <th class="right" style="width:20%">Đơn giá</th>
-            <th class="right" style="width:18%">Thành tiền</th>
+            <th style="width:45%">Sản phẩm</th>
+            <th style="width:14%;text-align:center">Số lượng</th>
+            <th style="width:18%;text-align:right">Đơn giá</th>
+            <th style="width:18%;text-align:right">Thành tiền</th>
             <th style="width:4%"></th>
           </tr>
         </thead>
