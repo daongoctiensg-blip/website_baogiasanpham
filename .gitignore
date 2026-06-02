@@ -1,0 +1,4 @@
+node_modules/
+orders.db
+*.db-journal
+.env
