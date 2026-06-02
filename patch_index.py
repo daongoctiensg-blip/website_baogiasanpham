@@ -81,7 +81,7 @@ print(f'[1] Submit block replaced: {n}')
 # ─────────────────────────────────────────────────────────────
 # 2. Thay adminUpdateStatus
 # ─────────────────────────────────────────────────────────────
-OLD_UPDATE = r'function adminUpdateStatus\(id, status\) \{.*?adminRender\(\);\s*\}'
+OLD_UPDATE = r'(?<!async )function adminUpdateStatus\(id, status\) \{.*?adminRender\(\);\s*\}'
 
 NEW_UPDATE = r"""async function adminUpdateStatus(id, status) {
   try {
