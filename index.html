@@ -732,11 +732,12 @@ const OrderStorage = {
   }
 };
 
-// ── Wrap ORDER_submitOrder to save order ─────────────────────────────────
+// ── Submit đơn qua API ───────────────────────────────────────
+const API_BASE = '/api';
 const _origSubmit = ORDER_submitOrder;
-ORDER_submitOrder = function() {
-  const name    = document.getElementById('custName').value.trim();
-  const phone   = document.getElementById('custPhone').value.trim();
+ORDER_submitOrder = async function() {
+  const name  = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim();
   if (!name || !phone) { alert('Vui lòng điền đầy đủ họ tên và số điện thoại.'); return; }
 
   const address = document.getElementById('custAddress').value.trim();
@@ -756,27 +757,32 @@ ORDER_submitOrder = function() {
     }
   });
 
-  const order = {
-    id:            OrderStorage.genId(),
-    createdAt:     new Date().toISOString(),
-    updatedAt:     new Date().toISOString(),
-    status:        'new',
-    customer: {
-      name, phone, address,
-      type:    typeMap[type] || type,
-    },
-    items,
-    total,
-    contactMethod: ORDER_contactMethod,
-    note
-  };
+  const submitBtn = document.querySelector('.order-submit-btn');
+  if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Đang gửi...'; }
 
-  OrderStorage.add(order);
-  window.open('https://zalo.me/84768654627', '_blank');
-  document.getElementById('orderIdDisplay').textContent = order.id;
-  document.getElementById('orderForm').style.display  = 'none';
-  document.getElementById('successMsg').style.display = 'block';
+  try {
+    const res = await fetch(API_BASE + '/orders', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        customer: { name, phone, address, type: typeMap[type] || type },
+        items, total, contactMethod: ORDER_contactMethod, note
+      })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Lỗi server');
+    window.open('https://zalo.me/84768654627', '_blank');
+    document.getElementById('orderIdDisplay').textContent = data.id;
+    document.getElementById('orderForm').style.display  = 'none';
+    document.getElementById('successMsg').style.display = 'block';
+  } catch(e) {
+    alert('Gửi đơn thất bại: ' + e.message);
+  } finally {
+    if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Gửi đơn hàng'; }
+  }
 };
+
+
 
 // ════════════════════════════════════════════════
 //  ADMIN PAGE
@@ -803,10 +809,17 @@ function fmtMoney(n) {
   return (n||0).toLocaleString('vi-VN') + '₫';
 }
 
-function adminRender() {
-  const orders  = OrderStorage.getAll();
-  const search  = (document.getElementById('adminSearch')?.value || '').toLowerCase();
+async function adminRender() {
+  const search  = (document.getElementById('adminSearch')?.value || '');
   const filter  = document.getElementById('adminFilter')?.value || 'all';
+  let orders = [];
+  try {
+    let url = API_BASE + '/orders?';
+    if (filter !== 'all') url += 'status=' + filter + '&';
+    if (search) url += 'search=' + encodeURIComponent(search);
+    const res = await fetch(url);
+    orders = await res.json();
+  } catch(e) { console.error('Load orders error:', e); }
 
   // Stats
   const stats = { new:0, processing:0, done:0, cancelled:0, total:0 };
@@ -871,13 +884,25 @@ function adminRender() {
     </div>`).join('');
 }
 
-function adminUpdateStatus(id, status) {
-  OrderStorage.updateStatus(id, status);
-  adminRender();
+async function adminUpdateStatus(id, status) {
+  try {
+    const res = await fetch(API_BASE + '/orders/' + id, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ status })
+    });
+    if (!res.ok) throw new Error('Lỗi cập nhật');
+    await adminRender();
+  } catch(e) { alert('Lỗi: ' + e.message); }
 }
 
-function adminShowDetail(id) {
-  const o = OrderStorage.getAll().find(x => x.id === id);
+async function adminShowDetail(id) {
+  let orders = [];
+  try {
+    const res = await fetch(API_BASE + '/orders');
+    orders = await res.json();
+  } catch(e) {}
+  const o = orders.find(x => x.id === id);
   if (!o) return;
   document.getElementById('adminModalContent').innerHTML = `
     <div style="margin-bottom:1rem;">
