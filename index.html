@@ -350,11 +350,12 @@ function openOrder(p) {
     price: price,
     category: p.categoryLabel
   });
-  window.open('order.html?' + params.toString(), '_blank');
+  showPage('order'); initOrderPage(p);
 }
 
 // ===== PAGE NAVIGATION =====
 function showPage(page) {
+  document.body.style.overflow = '';
   document.getElementById('page-catalog').style.display = page === 'catalog' ? 'block' : 'none';
   document.getElementById('page-order').style.display   = page === 'order'   ? 'block' : 'none';
   document.getElementById('page-admin').style.display   = page === 'admin'   ? 'block' : 'none';
@@ -641,6 +642,8 @@ function initOrderPage(preProduct) { const params = { get: (k) => preProduct ? (
   const pprice = params.get('price');
   const pcat = params.get('category');
   // Reset rows
+  document.getElementById('orderForm').style.display = 'block';
+  document.getElementById('successMsg').style.display = 'none';
   document.getElementById('productRows').innerHTML = '';
   document.getElementById('highlightedProduct').style.display='none';
   ORDER_rowCount = 0;
@@ -770,6 +773,7 @@ ORDER_submitOrder = function() {
 
   OrderStorage.add(order);
   window.open('https://zalo.me/84768654627', '_blank');
+  document.getElementById('orderIdDisplay').textContent = order.id;
   document.getElementById('orderForm').style.display  = 'none';
   document.getElementById('successMsg').style.display = 'block';
 };
@@ -1187,6 +1191,8 @@ function doChangePw() {
   <div class="order-success" id="successMsg">
     <div class="icon">✅</div>
     <h2 style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#1c1612;margin-bottom:.5rem">Đơn hàng đã được gửi!</h2>
+    <div style="margin:0.75rem auto 1rem;background:#f5f0eb;border:1px solid #c8b89a;border-radius:8px;padding:10px 20px;display:inline-block;"><span style="font-size:11px;color:#8a7060;text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:4px">Mã đơn hàng</span><span id="orderIdDisplay" style="font-family:monospace;font-size:18px;font-weight:700;color:#1c1612;letter-spacing:.05em">—</span></div>
+    <p style="display:none"</h2>
     <p style="font-size:13px;color:#7a6a58">Chúng tôi sẽ liên hệ xác nhận trong vòng 30 phút.<br>Cảm ơn bạn đã tin tưởng Thực Phẩm Devi!</p>
     <br>
     <a class="order-zalo-btn" href="https://zalo.me/84768654627" target="_blank" style="max-width:300px;margin:0 auto;">Chat Zalo để trao đổi thêm</a>
@@ -1220,7 +1226,7 @@ function doChangePw() {
 
   <!-- Filter & Search -->
   <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1rem;align-items:center;">
-    <input id="adminSearch" type="text" placeholder="🔍 Tìm tên / SĐT..." oninput="adminRender()"
+    <input id="adminSearch" type="text" placeholder="🔍 Tìm tên / SĐT / mã đơn..." oninput="adminRender()"
       style="padding:8px 14px;border:1px solid #d8c8b0;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:12px;width:220px;background:#fff;outline:none;">
     <select id="adminFilter" onchange="adminRender()"
       style="padding:8px 14px;border:1px solid #d8c8b0;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:12px;background:#fff;outline:none;appearance:none;padding-right:28px;">
