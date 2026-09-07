@@ -1271,7 +1271,7 @@ function doChangePw() {
 <div style="background:#1c1612;padding:.9rem 1.5rem;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
   <span style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#e8d5b0;letter-spacing:.06em;flex:1">Quản lý đơn hàng</span>
   <button onclick="adminRender()" style="padding:6px 14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#e8d5b0;border-radius:6px;font-size:11px;cursor:pointer;font-family:'Montserrat',sans-serif;">🔄 Làm mới</button>
-  <button onclick="OrderStorage.exportJSON()" style="padding:6px 14px;background:#c8a060;border:none;color:#1c1612;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Montserrat',sans-serif;">⬇ Export JSON</button>
+  <button onclick="exportOrdersJSON()" style="padding:6px 14px;background:#c8a060;border:none;color:#1c1612;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Montserrat',sans-serif;">⬇ Export JSON</button>
 </div>
 
 <div style="max-width:1100px;margin:0 auto;padding:1.5rem;">
@@ -1370,5 +1370,83 @@ function doChangePw() {
 </div>
 <!-- ═══ CHANGE PASSWORD MODAL END ═══ -->
 
+
+<script>
+// ── Export JSON từ API ────────────────────────────────────
+async function exportOrdersJSON() {
+  try {
+    const res = await fetch(API_BASE + '/orders');
+    const orders = await res.json();
+    const blob = new Blob([JSON.stringify(orders, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'devi-orders-' + new Date().toISOString().slice(0,10) + '.json';
+    a.click();
+    URL.revokeObjectURL(url);
+  } catch(e) { alert('Lỗi export: ' + e.message); }
+}
+
+// ── Bell notification — poll API mỗi 30s ─────────────────
+let _lastNewCount = null;
+
+async function bellCheck() {
+  try {
+    const res = await fetch(API_BASE + '/orders?status=new');
+    const orders = await res.json();
+    const count = orders.length;
+
+    const btn   = document.getElementById('bellBtn');
+    const badge = document.getElementById('bellBadge');
+    if (btn && badge) {
+      if (count > 0) {
+        badge.textContent = count;
+        badge.style.display = 'flex';
+        btn.style.color = '#c0392b';
+      } else {
+        badge.style.display = 'none';
+        btn.style.color = '#c8b090';
+      }
+    }
+
+    if (_lastNewCount !== null && count > _lastNewCount) {
+      const diff = count - _lastNewCount;
+      // Sound
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        [880, 1100, 1320].forEach((freq, i) => {
+          const o = ctx.createOscillator(), g = ctx.createGain();
+          o.connect(g); g.connect(ctx.destination);
+          o.frequency.value = freq; o.type = 'sine';
+          g.gain.setValueAtTime(0.3, ctx.currentTime + i*0.15);
+          g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i*0.15 + 0.3);
+          o.start(ctx.currentTime + i*0.15);
+          o.stop(ctx.currentTime + i*0.15 + 0.3);
+        });
+      } catch(e) {}
+      // Toast
+      let toast = document.getElementById('bellToast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'bellToast';
+        toast.style.cssText = 'position:fixed;bottom:24px;right:24px;background:#1c1612;color:#e8d5b0;padding:12px 20px;border-radius:10px;font-family:Montserrat,sans-serif;font-size:13px;font-weight:600;z-index:9999;box-shadow:0 8px 24px rgba(0,0,0,.3);transform:translateY(80px);transition:transform .3s ease;';
+        document.body.appendChild(toast);
+      }
+      toast.textContent = '🛒 Có ' + diff + ' đơn hàng mới!';
+      toast.style.transform = 'translateY(0)';
+      setTimeout(() => { toast.style.transform = 'translateY(80px)'; }, 4000);
+      // Reload admin nếu đang mở
+      const adminPage = document.getElementById('page-admin');
+      if (adminPage && adminPage.style.display !== 'none') adminRender();
+    }
+    _lastNewCount = count;
+  } catch(e) {}
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  bellCheck();
+  setInterval(bellCheck, 30000);
+});
+</script>
 </body>
 </html>
