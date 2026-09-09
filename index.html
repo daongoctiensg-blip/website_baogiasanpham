@@ -203,7 +203,7 @@ body { font-family:"Montserrat",sans-serif; background:#f5f0eb; color:#2a2018; }
 </div>
 
 <div class="filter-bar">
-  <button class="filter-btn" onclick="setFilter('all',this)">T&#7845;t c&#7843;</button>
+  <button id="filterAllBtn" class="filter-btn" onclick="setFilter('all',this)">T&#7845;t c&#7843;</button>
   <button class="filter-btn active" onclick="setFilter('bestseller',this)">&#128293; B&#225;n ch&#7841;y nh&#7845;t</button>
   <div class="filter-section-label">&#272;&#7891; u&#7889;ng:</div>
   <button class="filter-btn" onclick="setFilter('sake',this)">Sake Nh&#7853;t</button>
@@ -324,15 +324,27 @@ function setSearch(q) { searchQ = q.toLowerCase(); render(); }
 function render() {
   const el = document.getElementById('container');
   if (!productsLoaded) { el.innerHTML = '<div class="empty">\u0110ang t\u1ea3i s\u1ea3n ph\u1ea9m...</div>'; return; }
+
+  // Nếu đang ở tab "Bán chạy nhất" nhưng không có sản phẩm nào đạt rating >= 4.5,
+  // tự động fallback sang "Tất cả" (yêu cầu gốc: không được để trống trang).
+  let effectiveFilter = activeFilter;
+  if (activeFilter === 'bestseller') {
+    const hasBestseller = PRODUCTS.some(p => Number(p.rating) >= BESTSELLER_MIN_RATING);
+    if (!hasBestseller) {
+      effectiveFilter = 'all';
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      const allBtn = document.getElementById('filterAllBtn');
+      if (allBtn) allBtn.classList.add('active');
+    }
+  }
+
   const filtered = PRODUCTS.filter(p =>
-    (activeFilter === 'all' ? true : activeFilter === 'bestseller' ? (Number(p.rating) >= BESTSELLER_MIN_RATING) : p.category === activeFilter) &&
+    (effectiveFilter === 'all' ? true : effectiveFilter === 'bestseller' ? (Number(p.rating) >= BESTSELLER_MIN_RATING) : p.category === effectiveFilter) &&
     (!searchQ || p.name.toLowerCase().includes(searchQ) || p.group.toLowerCase().includes(searchQ))
   );
   document.getElementById('statCount').textContent = filtered.length;
   if (!filtered.length) {
-    el.innerHTML = activeFilter === 'bestseller'
-      ? '<div class="empty">Ch\u01b0a c\u00f3 s\u1ea3n ph\u1ea9m b\u00e1n ch\u1ea1y n\u00e0o \u0111\u01b0\u1ee3c \u0111\u00e1nh d\u1ea5u (t\u1eeb 4.5\u2605 tr\u1edf l\u00ean)</div>'
-      : '<div class="empty">Kh\u00f4ng t\u00ecm th\u1ea5y s\u1ea3n ph\u1ea9m</div>';
+    el.innerHTML = '<div class="empty">Kh\u00f4ng t\u00ecm th\u1ea5y s\u1ea3n ph\u1ea9m</div>';
     return;
   }
   const groups = {};
@@ -1124,7 +1136,7 @@ function openProductForm(id) {
   document.getElementById('pfNote').value = p ? (p.note || '') : '';
   document.getElementById('pfDescription').value = p ? (p.description || '') : '';
   document.getElementById('pfImageUrl').value = p ? (p.image || '') : '';
-  renderStarPicker(p ? Number(p.rating || 0) : 0);
+  renderStarPicker(p ? Number(p.rating || 0) : 3);
   if (p && p.image) {
     document.getElementById('pfImagePreviewWrap').style.display = 'block';
     document.getElementById('pfImagePreview').src = p.image;
