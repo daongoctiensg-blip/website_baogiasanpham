@@ -31,7 +31,7 @@ const upload = multer({
 
 // ── Config ────────────────────────────────────────────────
 const TELEGRAM_TOKEN = '8967147178:AAE9OkD_eG7haz7L1Fhr3KkT-kyk-IjaGqg';
-const TELEGRAM_CHAT_ID = '5754177904';
+const TELEGRAM_CHAT_IDS = ['5754177904', '8092297295']; // Tiedo & Vu Pham
 
 // ── DB ───────────────────────────────────────────────────
 const db = new Database(path.join(__dirname, 'orders.db'));
@@ -61,15 +61,19 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // ── Telegram helper ───────────────────────────────────────
 async function sendTelegram(text) {
   try {
-    await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: TELEGRAM_CHAT_ID,
-        text,
-        parse_mode: 'HTML'
+    // Gửi cho tất cả chat IDs
+    const promises = TELEGRAM_CHAT_IDS.map(chat_id =>
+      fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: chat_id,
+          text,
+          parse_mode: 'HTML'
+        })
       })
-    });
+    );
+    await Promise.allSettled(promises);
   } catch (e) {
     console.error('Telegram error:', e.message);
   }
