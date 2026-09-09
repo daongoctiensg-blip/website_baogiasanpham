@@ -1,0 +1,777 @@
+{
+  "Deraza Iberico Cebo Jamon bonein": {
+    "image": "/uploads/products/deraza-iberico-cebo-jamon-bonein.jpg",
+    "description": "Đùi heo Iberico Cebo có xương thương hiệu Deraza từ Tây Ban Nha — heo được nuôi tự nhiên ăn ngũ cốc và cỏ, ủ muối 24 tháng. Thịt màu đỏ đậm với vân mỡ trắng đặc trưng Iberico, hương vị đậm đà. Dòng Cebo cân bằng giữa chất lượng và giá thành.",
+    "retailPrice": 1684000
+  },
+  "Deraza Iberico Cebo Jamon boneless": {
+    "image": "/uploads/products/deraza-iberico-cebo-jamon-boneless.jpg",
+    "description": "Đùi sau Iberico Cebo không xương Deraza — ủ muối 24 tháng, đã lọc xương tiện lợi. Thịt Iberico thuần chủng, mỡ thấm đều trong từng thớ thịt mang vị béo ngậy đặc trưng. Dễ thái lát và phục vụ, phù hợp cho nhà hàng và sự kiện.",
+    "retailPrice": 2554000
+  },
+  "Deraza Iberico Cebo Paleta bonein": {
+    "image": "/uploads/products/deraza-iberico-cebo-paleta-bonein.jpg",
+    "description": "Đùi trước (Paleta) Iberico Cebo có xương Deraza — ủ muối 24 tháng. Đùi trước nhỏ hơn Jamon nhưng hương vị đậm đà hơn nhờ tỷ lệ mỡ cao. Giá tốt hơn để trải nghiệm heo Iberico Cebo chính thống Tây Ban Nha.",
+    "retailPrice": 1338000
+  },
+  "Thịt lưng Iberico Cebo muối nguyên cây DeRaza": {
+    "image": "/uploads/products/thit-lung-iberico-cebo-muoi-nguyen-cay-deraza.jpg",
+    "description": "Lomo — thịt lưng Iberico Cebo DeRaza ướp muối nguyên cây từ Tây Ban Nha. Phần thịt lưng nạc nhất của heo Iberico, ủ với muối, paprika và gia vị. Kết cấu chắc, hương thơm paprika đặc trưng, vị đậm đà của Iberico.",
+    "retailPrice": 1999000
+  },
+  "Deraza Shoulder Bellota pure Iberico 100%": {
+    "image": "/uploads/products/deraza-shoulder-bellota-pure-iberico-100.jpg",
+    "description": "Đùi trước Iberico Bellota 100% thuần chủng Deraza — đẳng cấp cao nhất, heo ăn sồi (bellota) tự nhiên, ủ muối 48 tháng. Mỡ không bão hòa thấm đều tạo vị béo ngậy tinh tế, hương thơm hạt dẻ đặc trưng. Sản phẩm cao cấp xứng tầm quà tặng VIP.",
+    "retailPrice": 2342000
+  },
+  "Deraza Iberico Bellota Jamon bonein": {
+    "image": "/uploads/products/deraza-iberico-bellota-jamon-bonein.jpg",
+    "description": "Đùi sau Iberico Bellota có xương Deraza — cấp độ cao nhất, heo thuần chủng 100% ăn sồi tự nhiên, ủ muối 36 tháng. Mỡ thấm sâu tạo hương vị phức tạp và béo ngậy không thể tìm thấy ở loại heo khác. Đặc sản Tây Ban Nha nổi tiếng thế giới.",
+    "retailPrice": 2975000
+  },
+  "Deraza Iberico Bellota Jamon boneless": {
+    "image": "/uploads/products/deraza-iberico-bellota-jamon-boneless.jpg",
+    "description": "Đùi sau Iberico Bellota không xương Deraza — ủ 36 tháng, đã lọc xương tiện lợi cho thái lát. Thịt Iberico ăn sồi tự nhiên với mỡ thấm đều, hương vị phức tạp và tinh tế. Dễ phục vụ, phù hợp cho tiệc cao cấp và nhà hàng.",
+    "retailPrice": 4962000
+  },
+  "Deraza Iberico Bellota Paleta bonein": {
+    "image": "/uploads/products/deraza-iberico-bellota-paleta-bonein.jpg",
+    "description": "Đùi trước Bellota có xương Deraza — heo Iberico ăn sồi tự nhiên, ủ muối 36 tháng. Paleta nhỏ hơn Jamon, mỡ thấm nhiều hơn tạo hương vị đặc biệt đậm đà. Giá thấp hơn Jamon nhưng hương vị Bellota vẫn đầy đủ.",
+    "retailPrice": 2125000
+  },
+  "Montesano Iberico Bellota Jamon boneless pure 100%": {
+    "image": "/uploads/products/montesano-iberico-bellota-jamon-boneless-pure-100.jpg",
+    "description": "Đùi sau Iberico Bellota 100% thuần chủng Montesano không xương — ủ muối trên 48 tháng, dài nhất trong các dòng. Mỡ oleic thấm sâu hoàn toàn, hương thơm hạt sồi đặc trưng, tan chảy trong miệng. Đỉnh cao chế biến thịt muối Tây Ban Nha.",
+    "retailPrice": 6824000
+  },
+  "Montesano Jamon Bellota pure Iberico 100%": {
+    "image": "/uploads/products/montesano-jamon-bellota-pure-iberico-100.jpg",
+    "description": "Đùi sau Iberico Bellota 100% có xương Montesano — ủ muối 48 tháng theo truyền thống. Heo thuần chủng Iberico ăn sồi đồng nội Extremadura. Màu đỏ đậm, mỡ vàng thấm đều, hương vị phức tạp và tinh tế bậc nhất.",
+    "retailPrice": 3794000
+  },
+  "Montesano Iberico Bellota Paleta bonein": {
+    "image": "/uploads/products/montesano-iberico-bellota-paleta-bonein.jpg",
+    "description": "Đùi trước Iberico Bellota có xương Montesano — ủ muối 36 tháng. Phần đùi trước giàu hương vị do tỷ lệ gân và mỡ đặc biệt. Giá hợp lý hơn Jamon để trải nghiệm Bellota Montesano cao cấp.",
+    "retailPrice": 2238000
+  },
+  "Montesano Iberico Cebo Jamon bonein": {
+    "image": "/uploads/products/montesano-iberico-cebo-jamon-bonein.jpg",
+    "description": "Đùi sau Iberico Cebo có xương Montesano — heo Iberico nuôi ngũ cốc, ủ muối 24 tháng. Cân bằng hoàn hảo giữa chất lượng và giá thành, thịt màu đỏ đẹp với mỡ trắng vân đều. Lựa chọn lý tưởng cho nhà hàng Iberico.",
+    "retailPrice": 1835000
+  },
+  "Montesano Iberico CEBO Jamon": {
+    "image": "/uploads/products/montesano-iberico-cebo-jamon.jpg",
+    "description": "Đùi sau Iberico Cebo không xương Montesano — ủ 24 tháng, tiện lợi cho thái lát. Thịt Iberico chất lượng cao với hương vị đậm đà và mỡ thấm vừa phải. Phù hợp phục vụ tiệc hoặc bày bàn charcuterie sang trọng.",
+    "retailPrice": 3072000
+  },
+  "Monte Roble Iberico Cebo Paleta bonein": {
+    "image": "/uploads/products/monte-roble-iberico-cebo-paleta-bonein.jpg",
+    "description": "Đùi trước Iberico Cebo có xương thương hiệu Monte Roble — dòng phổ thông của Montesano, ủ muối 24 tháng. Giá thành hợp lý cho chất lượng Iberico Cebo đích thực. Phù hợp cho nhà hàng hoặc gia đình yêu thích thịt muối Tây Ban Nha.",
+    "retailPrice": 1479000
+  },
+  "Montesano Serrano Jamon bonein": {
+    "image": "/uploads/products/montesano-serrano-jamon-bonein.jpg",
+    "description": "Đùi sau Serrano có xương Montesano — heo trắng Duroc ủ muối 15 tháng theo truyền thống Serrano. Thịt màu đỏ tươi, hương vị đậm đà muối mặn đặc trưng, ít mỡ hơn Iberico. Dòng phổ thông nhất và giá tốt nhất trong các loại Jamon Tây Ban Nha.",
+    "retailPrice": 935000
+  },
+  "Monte Roble Jamon Serrano Gran Reserva": {
+    "image": "/uploads/products/monte-roble-jamon-serrano-gran-reserva.jpg",
+    "description": "Đùi sau Serrano không xương Gran Reserva của Monte Roble — ủ muối 15 tháng, đạt chuẩn Gran Reserva. Không xương tiện lợi, thịt Serrano chất lượng cao với hương muối đặc trưng. Dễ thái và phục vụ cho mọi sự kiện.",
+    "retailPrice": 1632000
+  },
+  "IBERICO BELLOTA 100% SAU KHÔNG XƯƠNG 1KG 48 tháng": {
+    "image": "/uploads/products/iberico-bellota-100-sau-khong-xuong-1kg-48-thang.jpg",
+    "description": "Đùi sau Iberico Bellota 100% không xương 1KG — ủ muối 48 tháng đỉnh cao. Mỡ oleic tự nhiên từ chế độ ăn sồi, hương thơm hạt sồi phức tạp, kết cấu tan chảy. Đóng hộp sang trọng, quà tặng cao cấp xứng tầm đặc sản Tây Ban Nha số một.",
+    "retailPrice": 8181000
+  },
+  "IBERICO BELLOTA SAU KHÔNG XƯƠNG 1KG 36 tháng": {
+    "image": "/uploads/products/iberico-bellota-sau-khong-xuong-1kg-36-thang.jpg",
+    "description": "Đùi sau Iberico Bellota không xương 1KG trong hộp sang trọng — ủ muối 36 tháng. Thịt Iberico ăn sồi tự nhiên, mỡ không bão hòa thấm đều. Hộp quà tặng hoàn hảo cho dịp lễ Tết, biếu sếp hay đối tác quan trọng.",
+    "retailPrice": 5611000
+  },
+  "IBERICO CEBO SAU KHÔNG XƯƠNG 1KG 24 tháng": {
+    "image": "/uploads/products/iberico-cebo-sau-khong-xuong-1kg-24-thang.jpg",
+    "description": "Đùi sau Iberico Cebo không xương 1KG hộp quà — ủ muối 24 tháng. Thịt Iberico nuôi ngũ cốc, hương vị đậm đà, giá thành hợp lý hơn Bellota. Quà tặng sang trọng phù hợp nhiều dịp, thể hiện gu thưởng thức tinh tế.",
+    "retailPrice": 3015000
+  },
+  "SERRANO SAU KHÔNG XƯƠNG 1KG 16 tháng": {
+    "image": "/uploads/products/serrano-sau-khong-xuong-1kg-16-thang.jpg",
+    "description": "Đùi sau Serrano không xương 1KG hộp quà — ủ muối 16 tháng, phong cách truyền thống Tây Ban Nha. Thịt heo trắng Duroc, hương muối đặc trưng, ít béo hơn Iberico. Quà tặng phong phú, phù hợp mọi dịp với mức giá dễ tiếp cận.",
+    "retailPrice": 1962000
+  },
+  "ĐÙI HEO MUỐI MINI GRAND RESERVA VỚI NẤM TRUFFLE": {
+    "image": "/uploads/products/dui-heo-muoi-mini-grand-reserva-voi-nam-truffle.jpg",
+    "description": "Đùi heo muối mini Grand Reserva hương nấm Truffle — kết hợp thịt Duroc ủ muối 15 tháng với nấm Truffle quý hiếm. Hương thơm đất truffle quyến rũ hòa với vị mặn đậm đà của thịt muối. Sản phẩm độc đáo, quà tặng ấn tượng cho người sành ăn.",
+    "retailPrice": 2529000
+  },
+  "IBERICO BELLOTA SAU KHÔNG XƯƠNG 1KG không hộp 36 tháng": {
+    "image": "/uploads/products/iberico-bellota-sau-khong-xuong-1kg-khong-hop-36-thang.jpg",
+    "description": "Đùi sau Iberico Bellota không xương 1KG không hộp — ủ muối 36 tháng, đóng gói chân không. Chất lượng Bellota đầy đủ ở mức giá tốt hơn phiên bản hộp. Lý tưởng cho nhà hàng, đầu bếp chuyên nghiệp hoặc người thưởng thức thường xuyên.",
+    "retailPrice": 4751000
+  },
+  "IBERICO CEBO SAU KHÔNG XƯƠNG 1KG không hộp 24 tháng": {
+    "image": "/uploads/products/iberico-cebo-sau-khong-xuong-1kg-khong-hop-24-thang.jpg",
+    "description": "Đùi sau Iberico Cebo không xương 1KG đóng gói chân không — ủ 24 tháng, không hộp. Chất lượng Iberico Cebo đích thực ở mức giá hợp lý. Phù hợp cho gia đình hay nhà hàng muốn phục vụ thịt Iberico thường xuyên.",
+    "retailPrice": 5226000
+  },
+  "SERRANO SAU KHÔNG XƯƠNG 1KG không hộp 16 tháng": {
+    "image": "/uploads/products/serrano-sau-khong-xuong-1kg-khong-hop-16-thang.jpg",
+    "description": "Đùi sau Serrano không xương 1KG đóng chân không không hộp — ủ 16 tháng. Thịt Serrano thuần khiết, hương muối đặc trưng, ít béo, phù hợp với khẩu vị nhiều người. Giá thành tốt nhất trong các dòng đùi 1KG.",
+    "retailPrice": 2689000
+  },
+  "IBERICO CEBO SAU KHÔNG XƯƠNG 500G không hộp": {
+    "image": "/uploads/products/iberico-cebo-sau-khong-xuong-500g-khong-hop.jpg",
+    "description": "Đùi sau Iberico Cebo không xương 500G đóng chân không — phiên bản nhỏ tiện lợi. Thịt Iberico ủ muối 24 tháng đích thực, đủ cho 4-6 người thưởng thức. Lựa chọn tối ưu khi muốn trải nghiệm Iberico Cebo với ngân sách vừa phải.",
+    "retailPrice": 1350000
+  },
+  "SERRANO SAU KHÔNG XƯƠNG 500G không hộp": {
+    "image": "/uploads/products/serrano-sau-khong-xuong-500g-khong-hop.jpg",
+    "description": "Đùi sau Serrano không xương 500G đóng chân không — phiên bản nhỏ tiện lợi nhất. Thịt Serrano ủ muối 16 tháng, hương vị truyền thống Tây Ban Nha đích thực. Lý tưởng thử nghiệm thịt muối Tây Ban Nha lần đầu.",
+    "retailPrice": 871000
+  },
+  "Thịt lợn ướp muối đùi sau cắt lát bằng tay Iberico Bellota": {
+    "image": "/uploads/products/thit-lon-uop-muoi-dui-sau-cat-lat-bang-tay-iberico-bellota.jpg",
+    "description": "Thịt đùi Iberico Bellota cắt lát thủ công 100g — kỹ thuật cắt tay truyền thống Tây Ban Nha giúp lát thịt mỏng hoàn hảo, giữ nguyên hương vị và kết cấu. Mỡ Bellota tan ngay khi đặt lên lưỡi, hương vị hạt sồi tinh tế.",
+    "retailPrice": 1166000
+  },
+  "Bellota hand sliced": {
+    "image": "/uploads/products/bellota-hand-sliced.jpg",
+    "description": "Đùi Iberico Bellota 100g cắt lát bằng tay — thịt ủ 48 tháng được cắt mỏng thủ công theo truyền thống Tây Ban Nha. Màu đỏ đậm với vân mỡ trắng đẹp, hương thơm Bellota đặc trưng, tan chảy trong miệng. Sẵn sàng thưởng thức.",
+    "retailPrice": 1011000
+  },
+  "CEBO hand sliced": {
+    "image": "/uploads/products/cebo-hand-sliced.jpg",
+    "description": "Đùi Iberico Cebo cắt lát bằng tay 100g — thịt Iberico ủ 24 tháng cắt thủ công mỏng đều. Hương vị đậm đà, vân mỡ thấm vừa phải, giá thành hợp lý hơn Bellota. Thích hợp dùng kèm bánh mì, phô mai và rượu vang.",
+    "retailPrice": 705000
+  },
+  "Montesano Iberico Lomo Bellota 100%": {
+    "image": "/uploads/products/montesano-iberico-lomo-bellota-100.jpg",
+    "description": "Lomo Bellota 100% Iberico Montesano — thịt lưng Iberico Bellota ủ muối nguyên cây với paprika và gia vị. Kết cấu chắc hơn Jamon, hương thơm paprika đặc trưng kết hợp vị Bellota phong phú. Cắt lát mỏng dùng với bánh mì và rượu vang.",
+    "retailPrice": 3701000
+  },
+  "LOIN LOMO Iberian CEBO": {
+    "image": "/uploads/products/loin-lomo-iberian-cebo.jpg",
+    "description": "Lomo Iberian Cebo — thịt lưng heo Iberico Cebo ủ muối nguyên cây theo phong cách truyền thống. Phần thịt nạc nhất của heo với hương paprika đỏ đặc trưng. Giá tốt hơn Bellota, phong cách Iberico đích thực.",
+    "retailPrice": 2798000
+  },
+  "Montesano Iberico Lomito Bellota": {
+    "image": "/uploads/products/montesano-iberico-lomito-bellota.jpg",
+    "description": "Lomito Bellota Montesano — xúc xích làm từ thịt lưng Iberico Bellota ủ muối nguyên cây. Nhỏ hơn Lomo, đậm đà hơn do tỷ lệ mỡ cao hơn. Hương vị Bellota phức tạp, kết cấu mịn. Đặc sản charcuterie cao cấp Tây Ban Nha.",
+    "retailPrice": 4977000
+  },
+  "Chorizo Iberian Cular CEBO": {
+    "image": "/uploads/products/chorizo-iberian-cular-cebo.jpg",
+    "description": "Chorizo Iberian Cular Cebo — xúc xích cay lớn làm từ thịt Iberico Cebo với paprika đỏ và tỏi. Cổ xúc xích lớn, hun khói nhẹ theo truyền thống, hương vị đậm đà. Thái lát dày ăn kèm bánh mì hoặc thêm vào món ăn.",
+    "retailPrice": 1506000
+  },
+  "Chorizo Iberian Vela CEBO": {
+    "image": "/uploads/products/chorizo-iberian-vela-cebo.jpg",
+    "description": "Chorizo Iberian Vela Cebo 275g — xúc xích cay Iberico cỡ nhỏ tiện lợi. Paprika đỏ tạo màu sắc đẹp và hương vị đặc trưng, thịt Iberico Cebo đảm bảo chất lượng. Dễ thái lát, phù hợp bữa tiệc nhỏ hay ăn vặt cao cấp.",
+    "retailPrice": 422000
+  },
+  "Salchichon Iberian Vela CEBO": {
+    "image": "/uploads/products/salchichon-iberian-vela-cebo.jpg",
+    "description": "Salchichón Iberian Vela Cebo 275g — xúc xích Iberico không cay (khác Chorizo), ướp hạt tiêu đen và gia vị. Hương vị tinh tế hơn Chorizo, vị Iberico thuần khiết hơn. Thích hợp cho người không ăn cay, dùng kèm phô mai và vang trắng.",
+    "retailPrice": 422000
+  },
+  "Chorizo Iberian CEBO cắt lát": {
+    "image": "/uploads/products/chorizo-iberian-cebo-cat-lat.jpg",
+    "description": "Chorizo Iberian Cebo cắt lát sẵn 100g — tiện lợi nhất trong dòng Chorizo, sẵn sàng thưởng thức. Thịt Iberico Cebo với paprika đỏ đặc trưng, hương vị đậm đà. Mở ra là dùng được, thích hợp picnic, tiệc hoặc ăn kèm bánh mì hàng ngày.",
+    "retailPrice": 234000
+  },
+  "Salchichon Iberian CEBO cắt lát": {
+    "image": "/uploads/products/salchichon-iberian-cebo-cat-lat.jpg",
+    "description": "Salchichón Iberian Cebo cắt lát 100g — xúc xích Iberico hạt tiêu đen đã cắt lát tiện lợi. Hương vị tinh tế của thịt Iberico Cebo và hạt tiêu, không cay. Mở gói dùng ngay, lý tưởng cho bàn charcuterie hoặc ăn kèm rượu vang.",
+    "retailPrice": 234000
+  },
+  "Ham sliced Gran Reserva": {
+    "image": "/uploads/products/ham-sliced-gran-reserva.jpg",
+    "description": "Ham sliced Gran Reserva Montesano 120g — thịt đùi Serrano cắt lát sẵn, đạt chuẩn Gran Reserva. Ủ muối 15 tháng, lát thịt Serrano đỏ tươi mỏng đều. Tiện lợi và giá cả phải chăng để thưởng thức Jamon Tây Ban Nha hàng ngày.",
+    "retailPrice": 300000
+  },
+  "Ham sliced Reserva": {
+    "image": "/uploads/products/ham-sliced-reserva.jpg",
+    "description": "Ham sliced Reserva Montesano 100g — thịt đùi Serrano cắt lát chuẩn Reserva. Hương muối đặc trưng Serrano, lát mỏng đều đặn, màu đỏ tươi hấp dẫn. Nhập khẩu chính hãng từ Tây Ban Nha, tiện lợi thưởng thức mọi lúc.",
+    "retailPrice": 234000
+  },
+  "Bellota ham sliced 100g": {
+    "image": "/uploads/products/bellota-ham-sliced-100g.jpg",
+    "description": "Thịt đùi Iberico Bellota cắt lát 100g sản xuất tại Việt Nam — ủ muối 36 tháng theo quy trình Tây Ban Nha. Lát thịt mỏng màu đỏ đậm, mỡ Bellota thấm đều, hương vị đặc trưng. Tiện lợi, sẵn sàng thưởng thức, bảo quản lạnh.",
+    "retailPrice": 608000
+  },
+  "Bellota ham sliced 50g": {
+    "image": "/uploads/products/bellota-ham-sliced-50g.jpg",
+    "description": null,
+    "retailPrice": 335000
+  },
+  "Cebo ham sliced 100g": {
+    "image": "/uploads/products/cebo-ham-sliced-100g.jpg",
+    "description": "Thịt đùi Iberico Cebo cắt lát 100g sản xuất tại Việt Nam — ủ muối 24 tháng. Thịt Iberico chất lượng, hương vị đậm đà, mỡ thấm vừa phải. Giá hợp lý hơn Bellota, thích hợp cho người mới khám phá thịt muối Iberico.",
+    "retailPrice": 363000
+  },
+  "Cebo ham sliced 50g": {
+    "image": "/uploads/products/cebo-ham-sliced-50g.jpg",
+    "description": null,
+    "retailPrice": 183000
+  },
+  "Cebo ham sliced 30g": {
+    "image": "/uploads/products/cebo-ham-sliced-30g.jpg",
+    "description": null,
+    "retailPrice": 97000
+  },
+  "Serrano ham sliced 100g": {
+    "image": "/uploads/products/serrano-ham-sliced-100g.jpg",
+    "description": "Thịt đùi Serrano cắt lát 100g sản xuất tại Việt Nam — ủ muối 16 tháng theo phong cách Tây Ban Nha. Hương vị muối đặc trưng, ít béo, màu đỏ tươi. Dễ ăn, phù hợp mọi khẩu vị, dùng kèm bánh mì, phô mai hoặc trái cây.",
+    "retailPrice": 198000
+  },
+  "Serrano ham sliced 50g": {
+    "image": "/uploads/products/serrano-ham-sliced-50g.jpg",
+    "description": null,
+    "retailPrice": 109000
+  },
+  "Serrano Gran ham Sliced 30g": {
+    "image": "/uploads/products/serrano-gran-ham-sliced-30g.jpg",
+    "description": null,
+    "retailPrice": 61000
+  },
+  "Thịt lợn ướp muối Grand Reserva hương nấm Truffle 100g": {
+    "image": "/uploads/products/thit-lon-uop-muoi-grand-reserva-huong-nam-truffle-100g.jpg",
+    "description": "Thịt Duroc ướp muối Grand Reserva 100g hương nấm Truffle — kết hợp thịt Duroc ủ muối 15 tháng với hương nấm Truffle quý hiếm. Mùi thơm đất truffle đặc trưng quyến rũ, vị mặn đậm đà phức tạp. Trải nghiệm xa xỉ trong gói 100g tiện lợi.",
+    "retailPrice": 319000
+  },
+  "Thịt lợn ướp muối Grand Reserva hương nấm Truffle 50g": {
+    "image": "/uploads/products/thit-lon-uop-muoi-grand-reserva-huong-nam-truffle-50g.jpg",
+    "description": null,
+    "retailPrice": 168000
+  },
+  "Lomo ham sliced 50g": {
+    "image": "/uploads/products/lomo-ham-sliced-50g.jpg",
+    "description": "Thịt lưng (Lomo) Iberico Cebo cắt lát 50g — phần thịt nạc nhất của heo Iberico ướp paprika và muối. Kết cấu chắc hơn, hương paprika đặc trưng, vị đậm đà. Gói nhỏ 50g tiện lợi để thử nghiệm hoặc ăn vặt cao cấp.",
+    "retailPrice": 197000
+  },
+  "Chorizo ham sliced 50g": {
+    "image": "/uploads/products/chorizo-ham-sliced-50g.jpg",
+    "description": "Chorizo Iberico Cebo cắt lát 50g — xúc xích cay Iberico cắt lát tiện lợi trong gói nhỏ. Paprika đỏ tạo màu sắc đẹp và hương vị đặc trưng. Hoàn hảo cho bữa ăn nhẹ, picnic hoặc thêm vào pizza và pasta.",
+    "retailPrice": 119000
+  },
+  "Xúc xích Fuet vị nấm Truffle 55 gram": {
+    "image": "/uploads/products/xuc-xich-fuet-vi-nam-truffle-55-gram.jpg",
+    "description": "Xúc xích Fuet nấm Truffle 55g từ Tây Ban Nha — Fuet là xúc xích lên men khô truyền thống Catalan, kết hợp hương nấm Truffle quý. Vỏ trắng mốc tự nhiên bên ngoài, bên trong thịt đỏ đậm thơm Truffle. Ăn vặt sang trọng, dùng kèm vang đỏ.",
+    "retailPrice": 119000
+  },
+  "Xúc xích Fuet 55 gram (1)": {
+    "image": "/uploads/products/xuc-xich-fuet-55-gram-1.jpg",
+    "description": "Xúc xích Fuet truyền thống Tây Ban Nha 55g — xúc xích lên men khô Catalan với thịt heo muối tự nhiên. Vỏ mốc trắng đặc trưng, vị mặn đậm đà, hương thơm lên men tự nhiên. Ăn kèm bánh mì, phô mai và rượu vang.",
+    "retailPrice": 91000
+  },
+  "Xúc xích Chorizo 55 gram (1)": {
+    "image": "/uploads/products/xuc-xich-chorizo-55-gram-1.jpg",
+    "description": "Xúc xích Chorizo 55g Tây Ban Nha — xúc xích cay truyền thống với paprika đỏ đặc trưng. Thịt heo muối pha paprika smoked, hương vị đậm đà, màu đỏ rực. Ăn thẳng hoặc dùng trong nấu ăn, phong cách Tây Ban Nha chính thống.",
+    "retailPrice": 91000
+  },
+  "Xúc xích Fuet 55 gram (2)": {
+    "image": "/uploads/products/xuc-xich-fuet-55-gram-2.jpg",
+    "description": "Xúc xích Fuet Tây Ban Nha 55g — Fuet khô truyền thống Catalan với thịt heo và gia vị muối tự nhiên. Nhỏ gọn tiện lợi, hương vị đậm đà của lên men khô. Snack cao cấp hoàn hảo cho các buổi aperitivo hay picnic.",
+    "retailPrice": 91000
+  },
+  "Xúc xích Chorizo 55 gram (2)": {
+    "image": "/uploads/products/xuc-xich-chorizo-55-gram-2.jpg",
+    "description": "Xúc xích Chorizo 55g mini Tây Ban Nha — paprika đỏ tạo màu và hương vị đặc trưng không thể nhầm. Kích thước nhỏ gọn tiện lợi mang theo, hương vị cay nhẹ thơm ngon. Snack Tây Ban Nha đích thực, bổ sung năng lượng ngon miệng.",
+    "retailPrice": 91000
+  },
+  "Phô mai cừu dạng kem nấm Trufado 125 gram": {
+    "image": "/uploads/products/pho-mai-cuu-dang-kem-nam-trufado-125-gram.jpg",
+    "description": "Phô mai cừu dạng kem Trufado nấm Truffle 125g hũ — làm từ sữa cừu tươi Tây Ban Nha, kết hợp nấm Truffle đen quý hiếm. Kết cấu mềm mịn như kem, hương Truffle đất đặc trưng, vị béo ngậy của sữa cừu. Phết bánh mì hoặc dùng kèm mật ong.",
+    "retailPrice": 125000
+  },
+  "Phô mai cừu nấm Trufado đen 150 gram": {
+    "image": "/uploads/products/pho-mai-cuu-nam-trufado-den-150-gram.jpg",
+    "description": "Phô mai cừu Trufado nấm Truffle đen 150g — phô mai cứng làm từ sữa cừu với vảy Truffle đen thấm vào. Hương vị phức tạp của sữa cừu và Truffle quyến rũ. Thái lát mỏng dùng kèm mật ong, vang đỏ hoặc trái cây sấy.",
+    "retailPrice": 259000
+  },
+  "Phô mai cừu nấm Trufado đen 200 gram": {
+    "image": "/uploads/products/pho-mai-cuu-nam-trufado-den-200-gram.jpg",
+    "description": "Phô mai cừu Trufado nấm Truffle đen 200g — cùng dòng sản phẩm Trufado nhưng kích thước lớn hơn, phù hợp cho buổi tiệc. Sữa cừu Tây Ban Nha kết hợp Truffle đen cao cấp tạo hương vị sang trọng. Điểm nhấn hoàn hảo cho bàn phô mai.",
+    "retailPrice": 310000
+  },
+  "Phô mai cừu nấm Trufado đen 3000 gram": {
+    "image": "/uploads/products/pho-mai-cuu-nam-trufado-den-3000-gram.jpg",
+    "description": "Phô mai cừu Trufado Truffle đen nguyên khối 3-3.5kg — dạng khối lớn bán theo kg, lý tưởng cho nhà hàng hay sự kiện lớn. Hương vị Truffle đen nguyên chất, chất lượng đồng đều toàn khối. Cắt tươi tại chỗ để có trải nghiệm tốt nhất.",
+    "retailPrice": 1366000
+  },
+  "Phô mai cừu dạng kem mật ong lá kinh giới 125 gram": {
+    "image": "/uploads/products/pho-mai-cuu-dang-kem-mat-ong-la-kinh-gioi-125-gram.jpg",
+    "description": "Phô mai cừu kem mật ong và lá kinh giới (oregano) 125g hũ — kết hợp ngọt của mật ong hoa tự nhiên và hương thơm thảo mộc Địa Trung Hải. Kết cấu mềm mịn, vị ngọt thơm dịu. Phết bánh mì hoặc dùng kèm trái cây tươi.",
+    "retailPrice": 114000
+  },
+  "Phô mai cừu mật ong lá kinh giới 200 gram": {
+    "image": "/uploads/products/pho-mai-cuu-mat-ong-la-kinh-gioi-200-gram.jpg",
+    "description": "Phô mai cừu mật ong và oregano 200g — sữa cừu Tây Ban Nha kết hợp mật ong và lá kinh giới khô. Vị ngọt thanh của mật ong cân bằng với hương thảo mộc đặc trưng. Phù hợp làm dessert hoặc khai vị trong tiệc phô mai.",
+    "retailPrice": 298000
+  },
+  "Phô mai cừu mật ong lá kinh giới 1500 gram": {
+    "image": "/uploads/products/pho-mai-cuu-mat-ong-la-kinh-gioi-1500-gram.jpg",
+    "description": "Phô mai cừu mật ong oregano nguyên khối 1.5-2kg — bán theo kg cho nhà hàng. Hương vị mật ong và oregano quyến rũ trên nền sữa cừu thuần khiết. Cắt tươi mang lại hương vị tốt nhất, phù hợp cho menu phô mai đặc biệt.",
+    "retailPrice": 1265000
+  },
+  "Phô mai cừu dạng kem xông khói 125 gram": {
+    "image": "/uploads/products/pho-mai-cuu-dang-kem-xong-khoi-125-gram.jpg",
+    "description": "Phô mai cừu kem xông khói 125g hũ — sữa cừu Tây Ban Nha xông khói tự nhiên tạo lớp vỏ màu nâu vàng đặc trưng. Hương khói nhẹ, vị béo ngậy của sữa cừu, kết cấu mềm mịn. Phết bánh mì nướng hoặc dùng kèm rượu vang đỏ.",
+    "retailPrice": 114000
+  },
+  "Phô mai cừu xông khói 3000 gram": {
+    "image": "/uploads/products/pho-mai-cuu-xong-khoi-3000-gram.jpg",
+    "description": "Phô mai cừu xông khói nguyên khối 3-3.5kg — xông khói tự nhiên với gỗ thơm, lớp vỏ màu nâu đặc trưng. Bán theo kg, lý tưởng cho nhà hàng. Cắt lát tươi để thưởng thức hương khói và sữa cừu hòa quyện hoàn hảo.",
+    "retailPrice": 1187000
+  },
+  "Phô mai dê rượu vang đỏ 350 gram": {
+    "image": "/uploads/products/pho-mai-de-ruou-vang-do-350-gram.jpg",
+    "description": "Phô mai dê ủ trong rượu vang đỏ 350g — sữa dê tươi Tây Ban Nha ủ với vang đỏ tạo lớp vỏ tím đẹp đặc trưng. Hương vị phức tạp: vị chua của dê, tanin nhẹ của vang và hương thơm đất. Đặc sản hiếm, điểm nhấn trong mọi bàn phô mai.",
+    "retailPrice": 443000
+  },
+  "Pate Iberico Green Pepper 2x78g": {
+    "image": "/uploads/products/pate-iberico-green-pepper-2x78g.jpg",
+    "description": "Pate Iberico ớt xanh (Green Pepper) 2x78g của COREN Tây Ban Nha — thịt Iberico xay nhuyễn kết hợp hạt tiêu xanh. Vị cay nhẹ thanh tao từ tiêu xanh, béo ngậy từ Iberico. Phết bánh mì, cracker hoặc dùng kèm đồ khai vị.",
+    "retailPrice": 167000
+  },
+  "Pate Iberico Nấm Truffle 2x78g": {
+    "image": "/uploads/products/pate-iberico-nam-truffle-2x78g.jpg",
+    "description": "Pate Iberico nấm Truffle 2x78g của COREN — thịt Iberico cao cấp kết hợp Truffle đen quý hiếm. Hương Truffle đất đặc trưng hòa quyện vị béo ngậy của Iberico tạo pate sang trọng. Quà tặng ý nghĩa cho người sành ăn.",
+    "retailPrice": 167000
+  },
+  "Pate Iberico 2x78g": {
+    "image": "/uploads/products/pate-iberico-2x78g.jpg",
+    "description": "Pate Iberico truyền thống 2x78g của COREN Tây Ban Nha — thịt Iberico xay nhuyễn theo công thức cổ điển. Vị béo ngậy thuần khiết của Iberico, hương thơm gia vị nhẹ nhàng. Pate Iberico tiêu chuẩn, phù hợp mọi khẩu vị.",
+    "retailPrice": 167000
+  },
+  "Magro Iberico Luncheon Meat 200g": {
+    "image": "/uploads/products/magro-iberico-luncheon-meat-200g.jpg",
+    "description": "Thịt hộp Iberico Magro 200g của COREN — thịt Iberico nạc (magro) chế biến dạng luncheon meat. Ít mỡ hơn pate thông thường, hương vị Iberico đặc trưng, tiện lợi dùng hàng ngày. Thái lát ăn kèm bánh mì hoặc dùng trong nấu ăn.",
+    "retailPrice": 199000
+  },
+  "Oliu xanh có hạt Green Cerignola 170g": {
+    "image": "/uploads/products/oliu-xanh-co-hat-green-cerignola-170g.jpg",
+    "description": "Oliu xanh Cerignola hũ thủy tinh 170g của Frutto D'Italia — giống oliu Cerignola nổi tiếng miền Nam Italy, kích thước lớn, thịt dày. Hương thơm tươi, vị chua muối nhẹ nhàng, kết cấu giòn. Dùng khai vị hoặc kèm charcuterie board.",
+    "retailPrice": 125000
+  },
+  "Oliu xanh có hạt Green Castelvetrano 170g": {
+    "image": "/uploads/products/oliu-xanh-co-hat-green-castelvetrano-170g.jpg",
+    "description": "Oliu xanh Castelvetrano hũ thủy tinh 170g — giống oliu Sicily màu xanh lá đặc trưng, ngọt nhẹ và ít đắng nhất trong các loại. Thịt dày giòn, vị bơ nhẹ tinh tế. Phù hợp cho người mới thưởng thức oliu hoặc dùng kèm rượu vang trắng.",
+    "retailPrice": 117000
+  },
+  "Oliu đen có hạt Black Leccino 170g": {
+    "image": "/uploads/products/oliu-den-co-hat-black-leccino-170g.jpg",
+    "description": "Oliu đen Leccino hũ thủy tinh 170g — giống Leccino từ Tuscany Italy, màu đen tím chín mọng. Vị đậm đà hơn oliu xanh, hương thơm đất và trái cây khô đặc trưng. Dùng khai vị, thêm vào pizza hoặc salad Địa Trung Hải.",
+    "retailPrice": 117000
+  },
+  "Oliu xanh tách hạt Castelvetrano 30g": {
+    "image": "/uploads/products/oliu-xanh-tach-hat-castelvetrano-30g.jpg",
+    "description": "Oliu xanh Castelvetrano tách hạt 30g doypack tiện lợi — giống Sicily nổi tiếng, ngọt nhẹ và giòn. Gói nhỏ tách hạt dễ ăn, sẵn sàng thưởng thức. Snack lành mạnh tốt cho tim mạch, lý tưởng mang theo.",
+    "retailPrice": 34000
+  },
+  "Oliu hỗn hợp tách hạt Italian Olive Mix 30g": {
+    "image": "/uploads/products/oliu-hon-hop-tach-hat-italian-olive-mix-30g.jpg",
+    "description": "Hỗn hợp oliu Italy tách hạt 30g doypack — blend nhiều giống oliu Italy với gia vị thảo mộc Địa Trung Hải. Màu sắc đa dạng đẹp mắt, hương vị phong phú hơn oliu đơn giống. Trải nghiệm tinh hoa oliu Italy trong gói nhỏ tiện lợi.",
+    "retailPrice": 34000
+  },
+  "Oliu xanh tách hạt có gia vị Castelvetrano 30g": {
+    "image": "/uploads/products/oliu-xanh-tach-hat-co-gia-vi-castelvetrano-30g.jpg",
+    "description": "Oliu xanh Castelvetrano tách hạt ướp gia vị 30g — giống Sicily ngọt nhẹ kết hợp thảo mộc Địa Trung Hải (tỏi, ớt, oregano). Hương vị phức tạp hơn oliu thường, vị cay nhẹ kích thích vị giác. Snack cao cấp hoàn hảo kèm aperitivo.",
+    "retailPrice": 34000
+  },
+  "Umeshu Oyama 500ml (12%)": {
+    "image": "/uploads/products/umeshu-oyama-500ml-12.jpg",
+    "description": "Rượu mơ Nhật Bản thương hiệu Oyama từ tỉnh Tottori, được ngâm từ mơ tươi chọn lọc và shochu truyền thống. Hương thơm mơ tự nhiên ngọt dịu, vị chua nhẹ cân bằng, màu vàng hổ phách trong suốt. Thích hợp uống thẳng, với đá hoặc pha soda.",
+    "retailPrice": 382000
+  },
+  "Umeshu Oyama 300ml (12%)": {
+    "image": "/uploads/products/umeshu-oyama-300ml-12.jpg",
+    "description": "Rượu mơ Nhật Bản thương hiệu Oyama từ tỉnh Tottori, được ngâm từ mơ tươi chọn lọc và shochu truyền thống. Hương thơm mơ tự nhiên ngọt dịu, vị chua nhẹ cân bằng. Phiên bản 300ml tiện lợi, lý tưởng làm quà tặng.",
+    "retailPrice": 276000
+  },
+  "Nakano Umeshu 14% (mơ ly có trái)": {
+    "image": "/uploads/products/nakano-umeshu-14-mo-ly-co-trai.jpg",
+    "description": "Đặc sản rượu mơ Kishu của thương hiệu Nakano BC, Wakayama — vùng trồng mơ nổi tiếng nhất Nhật Bản. Phiên bản ly thủy tinh 160ml kèm nguyên trái mơ bên trong, hương vị đậm đà, ngọt thanh. Quà tặng độc đáo và sang trọng.",
+    "retailPrice": 106000
+  },
+  "Nakano Kishu 10% (vị truyền thống)": {
+    "image": "/uploads/products/nakano-kishu-10-vi-truyen-thong.jpg",
+    "description": "Rượu mơ Kishu truyền thống của Nakano BC, sử dụng mơ Nanko-ume hảo hạng từ tỉnh Wakayama. Nồng độ 10% nhẹ nhàng, vị ngọt chua hài hòa, hương mơ tươi thuần khiết. Công thức đã được gìn giữ qua nhiều thế hệ.",
+    "retailPrice": 408000
+  },
+  "Nakano Miiri 14% (mơ trái)": {
+    "image": "/uploads/products/nakano-miiri-14-mo-trai.jpg",
+    "description": "Rượu mơ cao cấp Nakano BC với nguyên trái mơ Nanko-ume ngâm trong bình. Nồng độ 14%, vị đậm đà hơn, màu vàng đậm đẹp mắt. Trái mơ ngâm mềm có thể ăn kèm, tạo trải nghiệm thưởng thức độc đáo.",
+    "retailPrice": 508000
+  },
+  "Nakano Yuzu 12% (vị chanh Nhật)": {
+    "image": "/uploads/products/nakano-yuzu-12-vi-chanh-nhat.jpg",
+    "description": "Rượu mơ kết hợp chanh yuzu Nhật Bản đặc trưng của Nakano BC. Hương thơm tươi mát của yuzu hòa quyện với vị ngọt chua của mơ, tạo nên hương vị thanh tao và sảng khoái. Rất được yêu thích vào mùa hè.",
+    "retailPrice": 552000
+  },
+  "Nakano Mitsu 12% (vị mật ong)": {
+    "image": "/uploads/products/nakano-mitsu-12-vi-mat-ong.jpg",
+    "description": "Rượu mơ mật ong Nakano BC — sự kết hợp giữa mơ Kishu và mật ong hoa thiên nhiên. Vị ngọt mượt mà, thơm dịu, lên men tự nhiên tạo chiều sâu hương vị. Phù hợp cho người mới thưởng thức rượu mơ Nhật Bản.",
+    "retailPrice": 552000
+  },
+  "Nakano Green Tea 12% (vị trà xanh)": {
+    "image": "/uploads/products/nakano-green-tea-12-vi-tra-xanh.jpg",
+    "description": "Rượu mơ trà xanh matcha độc đáo của Nakano BC, kết hợp mơ Kishu và trà xanh Nhật chất lượng cao. Màu xanh ngọc đặc trưng, hương vị cân bằng giữa vị chát của trà và chua ngọt của mơ.",
+    "retailPrice": 552000
+  },
+  "Nishinoseki Hana 300ml (15%)": {
+    "image": "/uploads/products/nishinoseki-hana-300ml-15.jpg",
+    "description": "Sake Hana của nhà máy Nishinoseki, Oita, Nhật Bản — dòng phổ thông ủ theo phương pháp truyền thống. Gạo Japonica địa phương lên men tự nhiên cho hương vị nhẹ nhàng, dễ uống. Phiên bản 300ml tiện lợi, lý tưởng để thử nghiệm.",
+    "retailPrice": 224000
+  },
+  "Nishinoseki Hana 720ml (15%)": {
+    "image": "/uploads/products/nishinoseki-hana-720ml-15.jpg",
+    "description": "Sake Hana nổi bật của Nishinoseki, Oita — dòng sake phổ thông chất lượng cao, ủ từ gạo địa phương. Hương thơm lúa gạo nhẹ nhàng, vị umami cân bằng, aftertaste sạch. Thích hợp uống lạnh (reishu) hoặc ấm (nurukan).",
+    "retailPrice": 447000
+  },
+  "Nishinoseki Hana 1800ml (15%)": {
+    "image": "/uploads/products/nishinoseki-hana-1800ml-15.jpg",
+    "description": "Sake Hana bình lớn 1.8L của Nishinoseki — lựa chọn lý tưởng cho tiệc gia đình hoặc nhà hàng. Ủ truyền thống tại Oita, hương vị quen thuộc ấm áp, uống được ở nhiều nhiệt độ. Tiết kiệm và tiện lợi cho tiêu thụ thường xuyên.",
+    "retailPrice": 936000
+  },
+  "Nishinoseki Nigori Zake 300ml (15%)": {
+    "image": "/uploads/products/nishinoseki-nigori-zake-300ml-15.jpg",
+    "description": "Sake đục (Nigori) Nishinoseki — lọc thô giữ lại cặn gạo trắng mịn đặc trưng. Vị ngọt béo, kết cấu mượt mà như kem, hương gạo đậm đà hơn sake thường. Lắc nhẹ trước khi uống để hòa cặn. Phiên bản 300ml.",
+    "retailPrice": 277000
+  },
+  "Nishinoseki Nigori Zake 720ml (15%)": {
+    "image": "/uploads/products/nishinoseki-nigori-zake-720ml-15.jpg",
+    "description": "Sake đục (Nigori) Nishinoseki 720ml — giữ nguyên cặn gạo sau lọc thô, tạo màu trắng sữa đặc trưng. Kết cấu béo mịn, vị ngọt tự nhiên của gạo, hậu vị dễ chịu. Uống lạnh hoặc với đá để cảm nhận hết độ mướt mà.",
+    "retailPrice": 468000
+  },
+  "Nishinoseki Hiya 300ml (17.4%)": {
+    "image": "/uploads/products/nishinoseki-hiya-300ml-17-4.jpg",
+    "description": "Sake Hiya — dòng sake nguyên chất không pha loãng (genshu) của Nishinoseki, nồng độ cao 17.4%. Vị đậm đà, phức tạp hơn, hương thơm phong phú từ lên men tự nhiên. Thích hợp uống lạnh (hiya) để cảm nhận trọn vẹn hương vị.",
+    "retailPrice": 277000
+  },
+  "Nishinoseki Hiya 720ml (17.4%)": {
+    "image": "/uploads/products/nishinoseki-hiya-720ml-17-4.jpg",
+    "description": "Sake Hiya genshu 720ml của Nishinoseki, nồng độ 17.4% không pha loãng. Hương vị đậm đà, có chiều sâu, phù hợp người yêu thích sake mạnh và phức tạp. Uống lạnh hoặc pha đá để làm dịu nồng độ. Đặc sản Oita.",
+    "retailPrice": 586000
+  },
+  "Nishinoseki Junmaishu 300ml (15%)": {
+    "image": "/uploads/products/nishinoseki-junmaishu-300ml-15.jpg",
+    "description": "Sake Junmai (thuần gạo) Nishinoseki — không thêm cồn hay đường, chỉ từ gạo, nước, koji và men. Hương vị đậm đà, umami phong phú, hậu vị dài. Phiên bản 300ml tiện lợi để thưởng thức Junmai chính thống.",
+    "retailPrice": 309000
+  },
+  "Nishinoseki Junmaishu 720ml (15%)": {
+    "image": "/uploads/products/nishinoseki-junmaishu-720ml-15.jpg",
+    "description": "Sake Junmaishu 720ml của Nishinoseki — dòng sake thuần gạo không thêm cồn, ủ theo phương pháp truyền thống Oita. Vị đậm đà, cân bằng, hương gạo và umami đặc trưng của Junmai. Thích hợp uống ấm (atsukan) để tăng hương vị.",
+    "retailPrice": 564000
+  },
+  "Nishinoseki Junmaishu 1800ml (15%)": {
+    "image": "/uploads/products/nishinoseki-junmaishu-1800ml-15.jpg",
+    "description": "Sake Junmaishu bình lớn 1.8L của Nishinoseki — sake thuần gạo chất lượng cao, phù hợp cho nhà hàng Nhật hoặc tiệc gia đình. Hương vị umami phong phú, ổn định, ngon nhất khi uống ấm hoặc nhiệt độ phòng.",
+    "retailPrice": 1361000
+  },
+  "Nishinoseki Kunisaki 720ml (15%)": {
+    "image": "/uploads/products/nishinoseki-kunisaki-720ml-15.jpg",
+    "description": "Sake cao cấp mang tên bán đảo Kunisaki huyền thoại của Oita. Ủ từ gạo đặc sản địa phương, hương thơm tinh tế, vị thanh tao và cân bằng. Đại diện tinh hoa sake vùng Oita, thích hợp làm quà biếu sang trọng.",
+    "retailPrice": 628000
+  },
+  "Nishinoseki Fuku 720ml (14%)": {
+    "image": "/uploads/products/nishinoseki-fuku-720ml-14.jpg",
+    "description": "Sake Fuku (Phúc) của Nishinoseki — dòng sake nhẹ 14%, tên gọi mang ý nghĩa may mắn và hạnh phúc. Hương vị nhẹ nhàng dễ uống, phù hợp cho mọi dịp. Thường được dùng trong các buổi tiệc và lễ kỷ niệm.",
+    "retailPrice": 798000
+  },
+  "Nishinoseki Gold Leaf 720ml (15%)": {
+    "image": "/uploads/products/nishinoseki-gold-leaf-720ml-15.jpg",
+    "description": "Sake đặc biệt Nishinoseki Gold Leaf — rắc vàng lá thật (kinpaku) bên trong tạo vẻ lộng lẫy. Hương vị sake truyền thống Oita được nâng tầm bởi vẻ đẹp thị giác độc đáo. Món quà biếu cao cấp và ấn tượng.",
+    "retailPrice": 840000
+  },
+  "Nishinoseki Gold Leaf 1800ml (15%)": {
+    "image": "/uploads/products/nishinoseki-gold-leaf-1800ml-15.jpg",
+    "description": "Sake Gold Leaf bình lớn 1.8L của Nishinoseki với vàng lá thật lơ lửng trong bình. Sang trọng và ấn tượng, lý tưởng cho tiệc cưới, tân niên hay quà tặng doanh nghiệp. Hương vị sake truyền thống Oita đặc sắc.",
+    "retailPrice": 1680000
+  },
+  "Nishinoseki HANA Barrel 1800ml (15%)": {
+    "image": "/uploads/products/nishinoseki-hana-barrel-1800ml-15.jpg",
+    "description": "Sake Hana đóng trong thùng gỗ tuyết tùng (cedar barrel) truyền Nhật Bản. Gỗ tuyết tùng thấm vào sake tạo hương thơm gỗ đặc trưng khó quên. Phong cách sake cổ xưa, thường dùng trong lễ khai trương hay sự kiện quan trọng.",
+    "retailPrice": 2233000
+  },
+  "Daishichi Junmai Kimoto 720ml (15%)": {
+    "image": "/uploads/products/daishichi-junmai-kimoto-720ml-15.jpg",
+    "description": "Sake Junmai Kimoto của nhà máy Daishichi, Fukushima — ủ theo phương pháp Kimoto cổ xưa 300 năm tuổi, không dùng axit nhân tạo. Hương vị phức tạp, đậm đà, có vị umami sâu và hậu vị dài. Đại diện xuất sắc của trường phái sake truyền thống.",
+    "retailPrice": 878000
+  },
+  "Daishichi Junmai Kimoto 1800ml (15%)": {
+    "image": "/uploads/products/daishichi-junmai-kimoto-1800ml-15.jpg",
+    "description": "Sake Junmai Kimoto Daishichi bình 1.8L — ủ theo phương pháp Kimoto truyền thống Fukushima. Hương vị phức tạp với tầng lớp umami phong phú, thích hợp uống ấm để cảm nhận chiều sâu. Lựa chọn hoàn hảo cho nhà hàng Nhật cao cấp.",
+    "retailPrice": 1563000
+  },
+  "Daishichi Masakura 300ml (15%)": {
+    "image": "/uploads/products/daishichi-masakura-300ml-15.jpg",
+    "description": "Sake Junmai Ginjo Masakura của Daishichi — xay gạo đến 60%, lên men ở nhiệt độ thấp theo phương pháp Kimoto. Hương thơm hoa quả thanh tao, vị mềm mại cân bằng giữa ngọt và umami. Phiên bản 300ml tiện lợi làm quà.",
+    "retailPrice": 763000
+  },
+  "Daishichi Masakura 720ml (15%)": {
+    "image": "/uploads/products/daishichi-masakura-720ml-15.jpg",
+    "description": "Sake Junmai Ginjo Masakura 720ml của Daishichi Fukushima. Gạo xay 60% kết hợp phương pháp Kimoto tạo hương vị độc đáo: hoa quả thanh tao từ Ginjo, umami sâu từ Kimoto. Cân bằng hoàn hảo giữa tinh tế và đậm đà.",
+    "retailPrice": 1906000
+  },
+  "Daishichi Kaiden 1800ml (15%)": {
+    "image": "/uploads/products/daishichi-kaiden-1800ml-15.jpg",
+    "description": "Sake Junmai Ginjo Kaiden — dòng cao cấp của Daishichi trong bình 1.8L. Ủ Kimoto với gạo xay tinh, cho hương vị tinh tế và phức tạp. Kaiden có nghĩa đạt đến cảnh giới tối cao, thể hiện triết lý làm sake của Daishichi.",
+    "retailPrice": 3278000
+  },
+  "Daishichi Minowamon 300ml (15%)": {
+    "image": "/uploads/products/daishichi-minowamon-300ml-15.jpg",
+    "description": "Sake Junmai Daiginjo Minowamon — đỉnh cao của dòng Ginjo Daishichi, gạo xay đến 50%. Phương pháp Kimoto kết hợp Daiginjo tạo hương thơm hoa quả phong phú, vị thanh tao tinh tế hiếm có. Phiên bản 300ml sang trọng.",
+    "retailPrice": 878000
+  },
+  "Daishichi Minowamon 720ml (15%)": {
+    "image": "/uploads/products/daishichi-minowamon-720ml-15.jpg",
+    "description": "Sake Junmai Daiginjo Minowamon 720ml — tinh hoa sake Daishichi, gạo xay 50% theo phương pháp Kimoto độc quyền. Hương thơm hoa quả thanh lịch, vị mềm mại tinh tế, hậu vị kéo dài. Giải thưởng quốc tế nhiều năm liên tiếp.",
+    "retailPrice": 2249000
+  },
+  "Daishichi Minowamon 1800ml (15%)": {
+    "image": "/uploads/products/daishichi-minowamon-1800ml-15.jpg",
+    "description": "Sake Junmai Daiginjo Minowamon bình 1.8L — phiên bản lớn của dòng sake cao cấp nhất Daishichi. Ủ Kimoto, gạo xay 50%, hương vị đạt đến sự hoàn hảo hiếm có. Phù hợp cho các sự kiện đặc biệt và bộ sưu tập sake.",
+    "retailPrice": 5221000
+  },
+  "Daishichi Shoka 720ml (16%)": {
+    "image": "/uploads/products/daishichi-shoka-720ml-16.jpg",
+    "description": "Sake Junmai Daiginjo Shoka 720ml của Daishichi — nồng độ 16%, genshu không pha loãng. Hương vị đậm đà và phức tạp hơn Minowamon, với tầng lớp hương vị phong phú từ gạo xay tinh và phương pháp Kimoto. Dành cho người sành sake.",
+    "retailPrice": 3164000
+  },
+  "Daishichi Shoka 1800ml (16%)": {
+    "image": "/uploads/products/daishichi-shoka-1800ml-16.jpg",
+    "description": "Sake Junmai Daiginjo Shoka bình 1.8L — phiên bản lớn của dòng genshu cao cấp Daishichi. Nồng độ 16%, không pha loãng, hương vị mạnh mẽ và phức tạp. Lý tưởng cho các buổi thưởng thức sake chuyên nghiệp.",
+    "retailPrice": 6364000
+  },
+  "Horeki Daishichi 720ml (16%)": {
+    "image": "/uploads/products/horeki-daishichi-720ml-16.jpg",
+    "description": "Sake Junmai Daiginjo Horeki — dòng đặc biệt của Daishichi tái hiện công thức sake thời Edo (1751). Genshu 16%, gạo xay tinh, ủ Kimoto theo phương pháp cổ nhất. Hương vị lịch sử và độc đáo, mang đậm bản sắc sake truyền thống Nhật Bản.",
+    "retailPrice": 5564000
+  },
+  "Daishichi Myoka Rangyoku 720ml (16%)": {
+    "image": "/uploads/products/daishichi-myoka-rangyoku-720ml-16.jpg",
+    "description": "Sake Junmai Daiginjo Myoka Rangyoku — tuyệt phẩm của Daishichi, gạo xay đến 35%. Hương thơm hoa lan tinh tế, vị thanh tao hoàn hảo, hậu vị tinh khiết kéo dài. Đoạt nhiều giải vàng quốc tế. Quà tặng sang trọng bậc nhất.",
+    "retailPrice": 11279000
+  },
+  "Daishichi Myoka Rangyoku Omega 720ml (16%)": {
+    "image": "/uploads/products/daishichi-myoka-rangyoku-omega-720ml-16.jpg",
+    "description": "Sake Junmai Daiginjo Myoka Rangyoku Omega — phiên bản tối thượng của Daishichi, gạo xay đến 18%. Đỉnh cao của nghệ thuật sake Nhật Bản, sản xuất số lượng giới hạn mỗi năm. Hương vị không thể diễn tả bằng ngôn từ, trải nghiệm một lần trong đời.",
+    "retailPrice": 28575000
+  },
+  "Sparkling Rose Esencia 750ml": {
+    "image": "/uploads/products/sparkling-rose-esencia-750ml.jpg",
+    "description": "Rượu nho không cồn hồng Esencia từ Tây Ban Nha — làm từ nho Moscatel và Tempranillo chọn lọc. Bọt tự nhiên, màu hồng pastel đẹp mắt, hương thơm hoa quả tươi mát. Lý tưởng cho thai phụ, người kiêng cồn, hoặc bữa tiệc buổi sáng.",
+    "retailPrice": 173000
+  },
+  "Sparkling White Esencia 750ml": {
+    "image": "/uploads/products/sparkling-white-esencia-750ml.jpg",
+    "description": "Rượu nho không cồn trắng Esencia Tây Ban Nha — nho Moscatel lên men kiểm soát, giữ nguyên hương thơm tự nhiên. Bọt tinh tế, vị ngọt nhẹ, hương hoa trắng và đào tươi. Thay thế hoàn hảo cho champagne trong mọi dịp lễ.",
+    "retailPrice": 173000
+  },
+  "Sparkling Ladoma Rose 750ml": {
+    "image": "/uploads/products/sparkling-ladoma-rose-750ml.jpg",
+    "description": "Sparkling rosé không cồn thương hiệu Ladoma từ Tây Ban Nha. Hương thơm dâu tây và hoa hồng, vị ngọt thanh mát, bọt nhỏ mịn đặc trưng. Phù hợp cho mọi đối tượng, đặc biệt là buổi tiệc tinh tế không cồn.",
+    "retailPrice": 173000
+  },
+  "Sparkling Ladoma White 750ml": {
+    "image": "/uploads/products/sparkling-ladoma-white-750ml.jpg",
+    "description": "Sparkling trắng không cồn Ladoma Tây Ban Nha — hương thơm táo xanh, chanh và hoa trắng tươi mát. Bọt mịn tinh tế, vị cân bằng giữa ngọt và chua nhẹ. Thích hợp khai vị hoặc dùng xuyên suốt bữa tiệc.",
+    "retailPrice": 173000
+  },
+  "FOGOSO ORO 750ml (5.5%)": {
+    "image": "/uploads/products/fogoso-oro-750ml-5-5.jpg",
+    "description": "Sparkling wine vàng Fogoso ORO (Vàng) từ Tây Ban Nha, nồng độ 5.5% nhẹ nhàng. Màu vàng ánh kim sang trọng, bọt tinh tế, hương thơm nho trắng và đào. Thiết kế chai độc đáo, lý tưởng cho tiệc tùng và quà tặng.",
+    "retailPrice": 394000
+  },
+  "FOGOSO BRONCE 750ml (5.5%)": {
+    "image": "/uploads/products/fogoso-bronce-750ml-5-5.jpg",
+    "description": "Sparkling wine đồng Fogoso BRONCE từ Tây Ban Nha — màu đồng rực rỡ ấm áp, bọt vừa phải. Hương thơm nho trắng chín, vị ngọt nhẹ dễ uống ở nồng độ 5.5%. Chai thiết kế lạ mắt, gây ấn tượng mạnh trong mọi buổi tiệc.",
+    "retailPrice": 394000
+  },
+  "FOGOSO PLATA 750ml (5.5%)": {
+    "image": "/uploads/products/fogoso-plata-750ml-5-5.jpg",
+    "description": "Sparkling wine bạc Fogoso PLATA (Bạc) Tây Ban Nha — màu bạc ánh kim hiện đại, hương thơm tươi mát của nho và chanh. Nồng độ 5.5%, vị nhẹ nhàng sảng khoái. Thiết kế chai kim loại sang trọng, lý tưởng làm quà tặng cao cấp.",
+    "retailPrice": 394000
+  },
+  "FOGOSO ROSA 750ml (5.5%)": {
+    "image": "/uploads/products/fogoso-rosa-750ml-5-5.jpg",
+    "description": "Sparkling rosé Fogoso ROSA từ Tây Ban Nha — màu hồng ánh ngọc trai quyến rũ. Hương thơm dâu tây, hoa hồng và đào, vị ngọt nhẹ 5.5% nữ tính và tinh tế. Chai kim loại độc đáo, điểm nhấn hoàn hảo cho mọi buổi tiệc.",
+    "retailPrice": 394000
+  },
+  "FOGOSO AZUL 750ml (5.5%)": {
+    "image": "/uploads/products/fogoso-azul-750ml-5-5.jpg",
+    "description": "Sparkling wine xanh Fogoso AZUL (Xanh) Tây Ban Nha — màu xanh ngọc bảo đặc biệt hiếm gặp, gây ấn tượng thị giác mạnh. Hương thơm mát lạnh, vị ngọt thanh, 5.5% nhẹ nhàng. Chai kim loại xanh độc đáo nhất trong dòng Fogoso.",
+    "retailPrice": 394000
+  },
+  "FOGOSO ORO 1.5L (5.5%)": {
+    "image": "/uploads/products/fogoso-oro-1-5l-5-5.jpg",
+    "description": "Sparkling Fogoso ORO cỡ lớn 1.5L — phiên bản Magnum của dòng vàng sang trọng. Hoàn hảo cho đám cưới, tiệc lớn hay quà tặng VIP ấn tượng. Chai vàng khổng lồ tạo điểm nhấn thị giác không thể quên cho mọi sự kiện.",
+    "retailPrice": 744000
+  },
+  "FOGOSO BRONCE 1.5L (5.5%)": {
+    "image": "/uploads/products/fogoso-bronce-1-5l-5-5.jpg",
+    "description": "Sparkling Fogoso BRONCE 1.5L Magnum — chai đồng khổng lồ sang trọng cho tiệc lớn. Nồng độ 5.5% phù hợp mọi đối tượng, hương vị nho trắng ngọt nhẹ dễ uống. Món quà tặng doanh nghiệp hay đám cưới gây ấn tượng mạnh.",
+    "retailPrice": 744000
+  },
+  "LAMBOOM ROSE 750ml (11%)": {
+    "image": "/uploads/products/lamboom-rose-750ml-11.jpg",
+    "description": "Sparkling rosé Lamboom từ Tây Ban Nha, nồng độ 11% — kết hợp giữa wine thật và sủi bọt tự nhiên. Màu hồng salmon đẹp, hương thơm dâu tây và hoa đỏ, vị cân bằng giữa ngọt và chua. Chất lượng tốt, giá hợp lý.",
+    "retailPrice": 245000
+  },
+  "LAMBOOM WHITE 750ml (11%)": {
+    "image": "/uploads/products/lamboom-white-750ml-11.jpg",
+    "description": "Sparkling trắng Lamboom Tây Ban Nha 11% — nho trắng lên men tự nhiên với bọt nhỏ mịn tinh tế. Hương thơm táo, lê và hoa trắng tươi mát, vị sạch và cân bằng. Thay thế champagne tốt cho bữa tiệc.",
+    "retailPrice": 245000
+  },
+  "White Sangria 250ml (6.5%)": {
+    "image": "/uploads/products/white-sangria-250ml-6-5.jpg",
+    "description": "Sangria trắng Tây Ban Nha 250ml lon tiện lợi — rượu vang trắng pha trộn nước ép trái cây nhiệt đới, chanh và thảo mộc. Vị ngọt thanh mát, sảng khoái, dễ uống ở nồng độ 6.5%. Thức uống mùa hè truyền thống của xứ sở bò tót.",
+    "retailPrice": 76000
+  },
+  "White Sangria 750ml (6.5%)": {
+    "image": "/uploads/products/white-sangria-750ml-6-5.jpg",
+    "description": "Sangria trắng Tây Ban Nha chai 750ml — hòa quyện rượu vang trắng với nước ép đào, cam, chanh và thảo mộc Địa Trung Hải. Màu vàng trong suốt đẹp mắt, vị ngọt chua cân bằng, uống kèm đá và trái cây tươi.",
+    "retailPrice": 274000
+  },
+  "Red Sangria 250ml (6.5%)": {
+    "image": "/uploads/products/red-sangria-250ml-6-5.jpg",
+    "description": "Sangria đỏ Tây Ban Nha 250ml lon tiện lợi — vang đỏ pha nước ép cam, quế, đinh hương và trái cây mùa hè. Màu đỏ ruby rực rỡ, hương thơm gia vị ấm áp, vị ngọt đậm đà. Thức uống tiệc ngoài trời không thể thiếu.",
+    "retailPrice": 76000
+  },
+  "Red Sangria 750ml (6.5%)": {
+    "image": "/uploads/products/red-sangria-750ml-6-5.jpg",
+    "description": "Sangria đỏ truyền thống Tây Ban Nha chai 750ml — vang đỏ kết hợp cam, táo, quế và brandy nhẹ. Hương vị phức tạp, ấm áp và sảng khoái. Ngon nhất khi uống lạnh với đá và lát cam tươi.",
+    "retailPrice": 274000
+  },
+  "LA DOMA Tempranillo 750ml (13%)": {
+    "image": "/uploads/products/la-doma-tempranillo-750ml-13.jpg",
+    "description": "Vang đỏ La Doma từ vùng La Mancha, Tây Ban Nha — nho Tempranillo thuần chủng trồng trên cao nguyên khô ráo. Màu đỏ ruby đẹp, hương thơm anh đào đỏ, vani và gia vị nhẹ. Vị tannin mềm mại, cân bằng, giá tốt cho chất lượng.",
+    "retailPrice": 244000
+  },
+  "Citran Bordeaux Limited Edition 750ml": {
+    "image": "/uploads/products/citran-bordeaux-limited-edition-750ml.jpg",
+    "description": "Vang đỏ Bordeaux Limited Edition từ Château Citran — thuộc appellation Haut-Médoc danh tiếng, Pháp. Blend Cabernet Sauvignon và Merlot cổ điển Bordeaux. Hương thơm blackcurrant, cedar và đất, vị tannin chắc và có chiều sâu.",
+    "retailPrice": 805000
+  },
+  "River Retreat Merlot 750ml (13.5%)": {
+    "image": "/uploads/products/river-retreat-merlot-750ml-13-5.jpg",
+    "description": "Vang đỏ Merlot River Retreat từ vùng Murray Darling, Úc — khí hậu ôn hòa tạo nho chín đều. Màu đỏ mận đậm, hương thơm mận, sô cô la đen và gia vị nhẹ. Vị mềm mại, tannin thấp, dễ uống phù hợp mọi bữa ăn.",
+    "retailPrice": 277000
+  },
+  "River Retreat Shiraz 750ml (14%)": {
+    "image": "/uploads/products/river-retreat-shiraz-750ml-14.jpg",
+    "description": "Vang đỏ Shiraz River Retreat từ Murray Darling, Úc — nho Shiraz chín hoàn hảo dưới nắng Úc. Màu đỏ đậm, hương thơm việt quất, hạt tiêu đen và gia vị. Vị đầy đặn, ấm áp, tannin vừa phải — phong cách Shiraz Úc đặc trưng.",
+    "retailPrice": 277000
+  },
+  "River Retreat Cabernet Sauvignon 750ml (14%)": {
+    "image": "/uploads/products/river-retreat-cabernet-sauvignon-750ml-14.jpg",
+    "description": "Vang đỏ Cabernet Sauvignon River Retreat, Murray Darling Úc — nho Cab Sauv trưởng thành cho hương thơm blackcurrant, nguyệt quế và cedar. Cấu trúc vững chắc, tannin chắc, hậu vị dài. Vang đỏ phong cách Úc dễ tiếp cận.",
+    "retailPrice": 277000
+  },
+  "River Retreat Sauvignon Blanc 750ml (11.5%)": {
+    "image": "/uploads/products/river-retreat-sauvignon-blanc-750ml-11-5.jpg",
+    "description": "Vang trắng Sauvignon Blanc River Retreat từ Murray Darling, Úc. Màu vàng xanh tươi sáng, hương thơm chanh dây, bưởi và thảo mộc tươi. Vị sạch sảng khoái, axit tươi, phù hợp khai vị hoặc hải sản.",
+    "retailPrice": 277000
+  },
+  "River Retreat Chardonnay 750ml (13%)": {
+    "image": "/uploads/products/river-retreat-chardonnay-750ml-13.jpg",
+    "description": "Vang trắng Chardonnay River Retreat, Murray Darling Úc — ủ một phần trong oak, hương thơm đào trắng, bơ nhẹ và vanilla. Vị đầy đặn hơn, kết cấu mượt mà, cân bằng tốt giữa trái cây và gỗ sồi.",
+    "retailPrice": 277000
+  },
+  "Estate Shiraz 750ml (14.5%)": {
+    "image": "/uploads/products/estate-shiraz-750ml-14-5.jpg",
+    "description": "Vang đỏ Estate Shiraz cao cấp từ Murray Darling, Úc — dòng Estate tuyển chọn nho từ vườn riêng. Màu đỏ đậm, hương thơm mâm xôi, sô cô la đen, hạt tiêu và gia vị. Phong cách đậm đà, tannin chắc, xứng danh dòng Estate.",
+    "retailPrice": 431000
+  },
+  "Estate Merlot 750ml (13.5%)": {
+    "image": "/uploads/products/estate-merlot-750ml-13-5.jpg",
+    "description": "Vang đỏ Estate Merlot cao cấp, Murray Darling Úc — nho Merlot chọn lọc từ vườn riêng chất lượng cao. Hương thơm anh đào đen, mận, chocolate và gia vị nhẹ. Vị mềm mại sang trọng, hậu vị dài. Đẳng cấp hơn dòng River Retreat.",
+    "retailPrice": 431000
+  },
+  "Estate Chardonnay 750ml (13.5%)": {
+    "image": "/uploads/products/estate-chardonnay-750ml-13-5.jpg",
+    "description": "Vang trắng Estate Chardonnay cao cấp, Murray Darling Úc — ủ oak kỹ lưỡng, hương thơm đào chín, bơ, vanilla và kem. Kết cấu đầy đặn, mượt mà, hậu vị dài và ấm. Thích hợp ăn kèm hải sản béo và thịt trắng.",
+    "retailPrice": 431000
+  },
+  "Estate Sauvignon Blanc 750ml (12%)": {
+    "image": "/uploads/products/estate-sauvignon-blanc-750ml-12.jpg",
+    "description": "Vang trắng Estate Sauvignon Blanc, Murray Darling Úc — dòng cao cấp với nho chọn lọc từ vườn riêng. Hương thơm chanh dây mãnh liệt, bưởi, thảo mộc và hoa trắng. Vị sắc bén, axit tươi, sảng khoái hoàn hảo.",
+    "retailPrice": 431000
+  },
+  "Aromo Winemakers Cab. Sauvignon & Syrah 750ml (14%)": {
+    "image": "/uploads/products/aromo-winemakers-cab-sauvignon-syrah-750ml-14.jpg",
+    "description": "Vang đỏ blend Cab Sauvignon & Syrah Aromo Winemakers từ thung lũng Maule, Chile. Hai giống nho bổ trợ hoàn hảo: Cab Sauv mang cấu trúc, Syrah thêm hương gia vị. Màu đỏ đậm, hương thơm phức tạp, vị đầy đặn và tinh tế.",
+    "retailPrice": 598000
+  },
+  "Aromo Winemakers Marselan & Carmenere 750ml (13.5%)": {
+    "image": "/uploads/products/aromo-winemakers-marselan-carmenere-750ml-13-5.jpg",
+    "description": "Vang đỏ blend Marselan & Carménère đặc trưng Chile của Aromo Winemakers. Carménère — giống nho biểu tượng Chile, Marselan thêm màu sắc và hương thơm hoa. Vị mềm mại với tannin tinh tế, hương thơm ớt xanh và trái đỏ.",
+    "retailPrice": 598000
+  },
+  "Aromo Sauvignon Blanc 750ml (13%)": {
+    "image": "/uploads/products/aromo-sauvignon-blanc-750ml-13.jpg",
+    "description": "Vang trắng Sauvignon Blanc Aromo từ thung lũng Maule, Chile — khí hậu lý tưởng cho Sauvignon Blanc sắc nét. Hương thơm chanh dây mãnh liệt, ổi, thảo mộc tươi và hoa trắng. Vị sạch, axit tươi sáng, hậu vị khoáng tốt.",
+    "retailPrice": 335000
+  },
+  "Dogma Gran Reserva Cab. Sauvignon & Syrah 750ml (14%)": {
+    "image": "/uploads/products/dogma-gran-reserva-cab-sauvignon-syrah-750ml-14.jpg",
+    "description": "Vang đỏ Gran Reserva Dogma Cab Sauvignon & Syrah — ủ oak 12 tháng, tiêu chuẩn Gran Reserva Chile. Phức tạp và sang trọng hơn dòng Reserva: hương thơm blackcurrant, sô cô la đen, cedar và gia vị. Vị tannin tinh tế, hậu vị dài.",
+    "retailPrice": 587000
+  },
+  "Dogma Marselan & Carmenere 750ml (14%)": {
+    "image": "/uploads/products/dogma-marselan-carmenere-750ml-14.jpg",
+    "description": "Vang đỏ Dogma Marselan & Carménère Chile — blend hiếm gặp, Marselan thêm màu đỏ đẹp và hương hoa hồng, Carménère mang đặc trưng ớt xanh Chile. Vị cân bằng tinh tế, tannin mượt mà, phong cách Chile hiện đại.",
+    "retailPrice": 587000
+  },
+  "Dogma Gran Reserva Tempranillo & Cab. Sauvignon 750ml (14%)": {
+    "image": "/uploads/products/dogma-gran-reserva-tempranillo-cab-sauvignon-750ml-14.jpg",
+    "description": "Vang đỏ Gran Reserva Dogma Tempranillo & Cab Sauvignon — sự giao thoa giữa phong cách Tây Ban Nha (Tempranillo) và Bordeaux (Cab Sauv) trên đất Chile. Ủ oak kỹ lưỡng, hương thơm anh đào, bạch đàn và gia vị. Phức tạp và tinh tế.",
+    "retailPrice": 587000
+  },
+  "Dogma Reserva Cab. Sauvignon 750ml (13.5%)": {
+    "image": "/uploads/products/dogma-reserva-cab-sauvignon-750ml-13-5.jpg",
+    "description": "Vang đỏ Reserva Cabernet Sauvignon Dogma từ thung lũng Maule, Chile — ủ oak 6 tháng theo chuẩn Reserva. Màu đỏ ruby đậm, hương thơm blackcurrant, sô cô la và gỗ cedar. Vị cân bằng, tannin chắc, giá trị tốt.",
+    "retailPrice": 396000
+  },
+  "Dogma Cabernet Sauvignon 750ml (13.5%)": {
+    "image": "/uploads/products/dogma-cabernet-sauvignon-750ml-13-5.jpg",
+    "description": "Vang đỏ Cabernet Sauvignon Dogma entry-level từ Chile — nho Cab Sauv thung lũng Maule chín hoàn hảo. Hương thơm blackcurrant, mận và ớt xanh nhẹ, vị đầy đặn, tannin vừa phải. Vang đỏ hàng ngày chất lượng tốt ở tầm giá.",
+    "retailPrice": 319000
+  },
+  "Dogma Merlot (13%/Vol)": {
+    "image": "/uploads/products/dogma-merlot-13-vol.jpg",
+    "description": null,
+    "retailPrice": 667000
+  },
+  "Dogma Chardonnay (12.5%/Vol)": {
+    "image": "/uploads/products/dogma-chardonnay-12-5-vol.jpg",
+    "description": null,
+    "retailPrice": 667000
+  },
+  "Dogma Rose Syrah (12.5%/Vol)": {
+    "image": "/uploads/products/dogma-rose-syrah-12-5-vol.jpg",
+    "description": null,
+    "retailPrice": 667000
+  },
+  "Dogma Reservado Cabernet Sauvignon (13%/Vol)": {
+    "image": "/uploads/products/dogma-reservado-cabernet-sauvignon-13-vol.jpg",
+    "description": null,
+    "retailPrice": 449000
+  },
+  "Salchichon ham silced 50g": {
+    "image": "/uploads/products/salchichon-ham-silced-50g.jpg",
+    "description": null,
+    "retailPrice": 119000
+  },
+  "Chorizo ham silced 30g": {
+    "image": "/uploads/products/chorizo-ham-silced-30g.jpg",
+    "description": null,
+    "retailPrice": 80000
+  },
+  "Salchichon ham silced 30g": {
+    "image": "/uploads/products/salchichon-ham-silced-30g.jpg",
+    "description": null,
+    "retailPrice": 80000
+  }
+}

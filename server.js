@@ -3,9 +3,31 @@ const Database = require('better-sqlite3');
 const cors = require('cors');
 const fetch = require('node-fetch');
 const path = require('path');
+const fs = require('fs');
+const multer = require('multer');
 
 const app = express();
 const PORT = 3003;
+
+// ── Upload dir ────────────────────────────────────────────
+const UPLOAD_DIR = path.join(__dirname, 'uploads', 'products');
+fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+
+const upload = multer({
+  storage: multer.diskStorage({
+    destination: (req, file, cb) => cb(null, UPLOAD_DIR),
+    filename: (req, file, cb) => {
+      const ext = (path.extname(file.originalname) || '.jpg').toLowerCase();
+      const safeExt = /^\.(jpg|jpeg|png|webp|gif)$/.test(ext) ? ext : '.jpg';
+      cb(null, `${Date.now()}-${Math.round(Math.random() * 1e9)}${safeExt}`);
+    }
+  }),
+  limits: { fileSize: 8 * 1024 * 1024 },
+  fileFilter: (req, file, cb) => {
+    if (/^image\/(jpeg|png|webp|gif)$/.test(file.mimetype)) cb(null, true);
+    else cb(new Error('Chỉ chấp nhận file ảnh (jpg, png, webp, gif)'));
+  }
+});
 
 // ── Config ────────────────────────────────────────────────
 const TELEGRAM_TOKEN = '8967147178:AAE9OkD_eG7haz7L1Fhr3KkT-kyk-IjaGqg';
@@ -34,6 +56,7 @@ db.exec(`
 // ── Middleware ────────────────────────────────────────────
 app.use(cors());
 app.use(express.json());
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // ── Telegram helper ───────────────────────────────────────
 async function sendTelegram(text) {
@@ -219,6 +242,20 @@ db.exec(`
   )
 `);
 
+// Migration: thêm cột image / description / retail_price nếu chưa có (an toàn khi chạy lại)
+{
+  const existingCols = db.prepare('PRAGMA table_info(products)').all().map(c => c.name);
+  if (!existingCols.includes('image')) {
+    db.exec('ALTER TABLE products ADD COLUMN image TEXT');
+  }
+  if (!existingCols.includes('description')) {
+    db.exec('ALTER TABLE products ADD COLUMN description TEXT');
+  }
+  if (!existingCols.includes('retail_price')) {
+    db.exec('ALTER TABLE products ADD COLUMN retail_price INTEGER');
+  }
+}
+
 // Seed products nếu bảng rỗng
 const productCount = db.prepare('SELECT COUNT(*) as c FROM products').get().c;
 if (productCount === 0) {
@@ -243,6 +280,50 @@ if (productCount === 0) {
 }
 
 // ── Product Routes ────────────────────────────────────────
+
+function rowToProduct(r) {
+  return {
+    id: r.id,
+    name: r.name,
+    category: r.category,
+    categoryLabel: r.category_label,
+    group: r.grp,
+    price: r.price,
+    retailPrice: r.retail_price,
+    volume: r.volume,
+    pack: r.pack,
+    note: r.note,
+    rating: r.rating,
+    hidden: !!r.hidden,
+    image: r.image,
+    description: r.description,
+    createdAt: r.created_at
+  };
+}
+
+// Rating: 0 -> 5, mỗi nấc 0.5
+function validateRating(rating) {
+  if (rating === undefined || rating === null || rating === '') return { ok: true, value: 0 };
+  const n = Number(rating);
+  if (Number.isNaN(n) || n < 0 || n > 5) {
+    return { ok: false, error: 'Rating phải từ 0 đến 5' };
+  }
+  // cho phép sai số float nhỏ
+  const doubled = Math.round(n * 2);
+  if (Math.abs(doubled - n * 2) > 1e-6) {
+    return { ok: false, error: 'Rating chỉ được đi theo nấc 0.5 (0, 0.5, 1, ..., 5)' };
+  }
+  return { ok: true, value: doubled / 2 };
+}
+
+// POST /api/upload — upload ảnh sản phẩm, trả về URL để lưu vào field image
+app.post('/api/upload', (req, res) => {
+  upload.single('image')(req, res, (err) => {
+    if (err) return res.status(400).json({ error: err.message });
+    if (!req.file) return res.status(400).json({ error: 'Không có file ảnh' });
+    res.json({ url: `/uploads/products/${req.file.filename}` });
+  });
+});
 
 // GET /api/products — lấy danh sách sản phẩm
 app.get('/api/products', (req, res) => {
@@ -269,7 +350,7 @@ app.get('/api/products', (req, res) => {
     sql += ' ORDER BY category, grp, id';
 
     const rows = db.prepare(sql).all(...params);
-    res.json(rows);
+    res.json(rows.map(rowToProduct));
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
@@ -278,19 +359,22 @@ app.get('/api/products', (req, res) => {
 // POST /api/products — thêm sản phẩm mới
 app.post('/api/products', (req, res) => {
   try {
-    const { name, category, categoryLabel, group, price, volume, pack, note, rating } = req.body;
+    const { name, category, categoryLabel, group, price, retailPrice, volume, pack, note, rating, image, description } = req.body;
 
     if (!name || !category || !price) {
       return res.status(400).json({ error: 'Thiếu name, category hoặc price' });
     }
 
+    const ratingCheck = validateRating(rating);
+    if (!ratingCheck.ok) return res.status(400).json({ error: ratingCheck.error });
+
     const result = db.prepare(`
-      INSERT INTO products (name, category, category_label, grp, price, volume, pack, note, rating)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO products (name, category, category_label, grp, price, retail_price, volume, pack, note, rating, image, description)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `).run(
       name, category, categoryLabel || category,
-      group || '', price, volume || '', pack || '', note || '',
-      rating || 0
+      group || '', price, retailPrice || null, volume || '', pack || '', note || '',
+      ratingCheck.value, image || null, description || null
     );
 
     res.json({ success: true, id: result.lastInsertRowid });
@@ -306,11 +390,11 @@ app.post('/api/products', (req, res) => {
 app.patch('/api/products/:id', (req, res) => {
   try {
     const { id } = req.params;
-    const { name, category, categoryLabel, group, price, volume, pack, note, rating, hidden } = req.body;
+    const { name, category, categoryLabel, group, price, retailPrice, volume, pack, note, rating, hidden, image, description } = req.body;
 
-    // Kiểm tra nếu hidden thì không được xoá nếu có đơn hàng
-    if (hidden === undefined && !name && !price) {
-      return res.status(400).json({ error: 'Không có field nào để cập nhật' });
+    if (rating !== undefined) {
+      const ratingCheck = validateRating(rating);
+      if (!ratingCheck.ok) return res.status(400).json({ error: ratingCheck.error });
     }
 
     const product = db.prepare('SELECT * FROM products WHERE id = ?').get(id);
@@ -324,11 +408,14 @@ app.patch('/api/products/:id', (req, res) => {
     if (categoryLabel !== undefined) { updates.push('category_label = ?'); vals.push(categoryLabel); }
     if (group !== undefined) { updates.push('grp = ?'); vals.push(group); }
     if (price !== undefined) { updates.push('price = ?'); vals.push(price); }
+    if (retailPrice !== undefined) { updates.push('retail_price = ?'); vals.push(retailPrice || null); }
     if (volume !== undefined) { updates.push('volume = ?'); vals.push(volume); }
     if (pack !== undefined) { updates.push('pack = ?'); vals.push(pack); }
     if (note !== undefined) { updates.push('note = ?'); vals.push(note); }
-    if (rating !== undefined) { updates.push('rating = ?'); vals.push(rating); }
+    if (rating !== undefined) { updates.push('rating = ?'); vals.push(validateRating(rating).value); }
     if (hidden !== undefined) { updates.push('hidden = ?'); vals.push(hidden ? 1 : 0); }
+    if (image !== undefined) { updates.push('image = ?'); vals.push(image || null); }
+    if (description !== undefined) { updates.push('description = ?'); vals.push(description || null); }
 
     if (updates.length === 0) return res.status(400).json({ error: 'Không có gì để cập nhật' });
 
