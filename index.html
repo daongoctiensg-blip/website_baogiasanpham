@@ -80,6 +80,9 @@ body { font-family:"Montserrat",sans-serif; background:#f5f0eb; color:#2a2018; }
 .modal-meta { font-size:11px; color:#a09080; margin-bottom:0.85rem; }
 .modal-rating { margin-bottom:0.85rem; display:flex; align-items:center; gap:6px; }
 .modal-rating .star { font-size:16px; letter-spacing:1px; }
+.card-rating { margin-bottom:6px; }
+.card-rating .star { font-size:11px; letter-spacing:1px; }
+.card-rating .star-value { font-size:10px; }
 .star-full { color:#c8a060; }
 .star-half { color:#c8a060; opacity:.5; }
 .star-empty { color:#d8c8b0; }
@@ -357,7 +360,10 @@ function render() {
     items.forEach((p, i) => {
       const img = getImg(p.name);
       const imgHtml = img ? '<div class="product-img-wrap"><img src="' + img + '" alt="" loading="lazy"></div>' : '<div class="product-img-placeholder">\ud83c\udf76</div>';
-      html += '<div class="product-card" onclick="showModal(' + p.id + ')">' + imgHtml + '<div class="product-body"><div class="product-badge ' + getBadge(p.category) + '">' + p.categoryLabel + '</div><div class="product-name">' + p.name + '</div><div class="product-meta">' + p.volume + ' \u00b7 ' + p.pack + (p.note ? ' \u00b7 ' + p.note : '') + '</div><div class="product-price">' + fmt(rp(p)) + '</div><div class="product-price-label">Gi\u00e1 b\u00e1n l\u1ebb (\u0111\u00e3 VAT)</div></div></div>';
+      const ratingHtml = (p.rating && Number(p.rating) > 0)
+        ? '<div class="card-rating">' + renderStars(p.rating) + '<span class="star-value">' + Number(p.rating).toFixed(1) + '/5</span></div>'
+        : '';
+      html += '<div class="product-card" onclick="showModal(' + p.id + ')">' + imgHtml + '<div class="product-body"><div class="product-badge ' + getBadge(p.category) + '">' + p.categoryLabel + '</div><div class="product-name">' + p.name + '</div><div class="product-meta">' + p.volume + ' \u00b7 ' + p.pack + (p.note ? ' \u00b7 ' + p.note : '') + '</div>' + ratingHtml + '<div class="product-price">' + fmt(rp(p)) + '</div><div class="product-price-label">Gi\u00e1 b\u00e1n l\u1ebb (\u0111\u00e3 VAT)</div></div></div>';
     });
     html += '</div></div>';
   });
